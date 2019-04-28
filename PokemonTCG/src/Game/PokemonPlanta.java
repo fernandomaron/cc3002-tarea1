@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 public class PokemonPlanta extends AbstractPokemon {
     public PokemonPlanta(){
-        this.setHP(0);
-        this.setID(0);
-        this.setEnergias(new ArrayList<>());
-        this.setHabilidades(new ArrayList<>());
+        this(0,0,new ArrayList<>(), new ArrayList<>());
     }
 
     public PokemonPlanta (int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad>habilidades){

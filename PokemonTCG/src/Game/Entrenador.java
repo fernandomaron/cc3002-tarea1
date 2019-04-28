@@ -10,9 +10,12 @@ public class Entrenador {
     private ArrayList<Pokemon> Banca;
     private ArrayList<Carta> Mano;
     public Entrenador(){
-        Activo=new PokemonNull();
-        Banca=new ArrayList<>();
-        Mano=new ArrayList<>();
+        this(new PokemonNull(), new ArrayList<>(), new ArrayList<>());
+    }
+    public Entrenador(Pokemon activo,ArrayList<Pokemon> banca,ArrayList<Carta> mano){
+        Activo=activo;
+        Banca=banca;
+        Mano=mano;
     }
 
     public ArrayList<Habilidad> habilidadesActivo(){return Activo.getHabilidades();}
@@ -21,6 +24,7 @@ public class Entrenador {
     }
     public void jugarCarta(int index){
         Mano.get(index).jugar(this);
+        Mano.remove(index);
     }
     public void jugarEnergia(Energia energia) {
         Activo.agregarEnergia(energia);
@@ -30,25 +34,35 @@ public class Entrenador {
         Activo=pokemon;
     }
 
+    public Pokemon getActivo(){return Activo;}
+
     public ArrayList<Pokemon> getBanca(){
         return Banca;
     }
 
+    public void addToMano(Carta carta){
+        Mano.add(carta);
+    }
+    public void setMano(ArrayList<Carta> mano) {
+        Mano = mano;
+    }
+
+    public ArrayList<Carta> getMano() {
+        return Mano;
+    }
+
     public void setBanca(ArrayList<Pokemon> newBanca){Banca=newBanca;}
     public void jugarPokemon(Pokemon pokemon){
-        int check=0;
-        if (Banca.isEmpty()){
-            Banca.add(pokemon);
-            Mano.remove(pokemon);
-            check=1;
+        if(this.getActivo().isNull() && Banca.isEmpty()){
+            this.setActivo(pokemon);
         }
-        if(Activo.isNull()){
+        else if(this.getActivo().isNull() && !Banca.isEmpty()){
             this.setActivo(Banca.get(0));
             Banca.remove(0);
-        }
-        if (check==0 && Banca.size()<5){
             Banca.add(pokemon);
-            Mano.remove(pokemon);
+        }
+        else if (Banca.size()<5){
+            Banca.add(pokemon);
         }
         else {
             System.out.println("No se puede jugar este pokemon");
