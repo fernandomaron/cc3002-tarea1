@@ -73,7 +73,7 @@ public class AtaqueTest {
         Beldum.atacadoPorPlanta(ataque);
         assertEquals(30,Beldum.getHP());
         Seedot.atacadoPorPlanta(ataque);
-        assertEquals(40,Seedot.getHP());
+        assertEquals(30,Seedot.getHP());
     }
 
     @Test
@@ -122,5 +122,15 @@ public class AtaqueTest {
         assertEquals(20,Beldum.getHP());
         Seedot.atacadoPorPsiquico(ataque);
         assertEquals(30,Seedot.getHP());
+    }
+
+    @Test
+    public void atacarVariasVeces(){
+        Charmander.atacadoPorAgua(ataque);
+        assertEquals(20,Charmander.getHP());
+        Charmander.atacadoPorAgua(ataque);
+        assertEquals(0,Charmander.getHP());
+        Charmander.atacadoPorAgua(ataque);
+        assertEquals(-20,Charmander.getHP());
     }
 }

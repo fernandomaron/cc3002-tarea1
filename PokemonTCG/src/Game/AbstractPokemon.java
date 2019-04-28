@@ -10,8 +10,14 @@ public abstract class AbstractPokemon implements Pokemon {
     private ArrayList<Habilidad> Habilidades;
     private Entrenador Trainer;
 
-    public void agregarEnergia(Energia energia){
-        Energias.add(energia);
+    public void setTrainer(Entrenador trainer) {
+        Trainer = trainer;
+    }
+
+    @Override
+    public void jugar(Entrenador entrenador) {
+        this.setTrainer(entrenador);
+        entrenador.jugarPokemon(this);
     }
 
     public int getHP() {
@@ -34,26 +40,8 @@ public abstract class AbstractPokemon implements Pokemon {
         this.Energias=energias;
     }
 
-    public void setHabilidades(ArrayList<Habilidad> habilidades){
-        this.Habilidades=habilidades;
-    }
-    @Override
-    public void jugar(Entrenador entrenador) {
-        this.setTrainer(entrenador);
-        entrenador.jugarPokemon(this);
-    }
-
-    @Override
-    public boolean isNull() {
-        return false;
-    }
-
-    public void setTrainer(Entrenador trainer) {
-        Trainer = trainer;
-    }
-
-    public void usar(Habilidad habilidad, Pokemon objetivo) {
-        habilidad.ejecutar(this, objetivo);
+    public void agregarEnergia(Energia energia){
+        Energias.add(energia);
     }
 
     public boolean hasEnergy(ArrayList<Energia> costo){
@@ -75,9 +63,22 @@ public abstract class AbstractPokemon implements Pokemon {
         return true;
     }
 
+    public void setHabilidades(ArrayList<Habilidad> habilidades){
+        this.Habilidades=habilidades;
+    }
+
     @Override
-    public void atacarCon(Ataque ataque, Pokemon objetivo) {
-        this.atacarCon(ataque, objetivo);
+    public ArrayList<Habilidad> getHabilidades() {
+        return Habilidades;
+    }
+
+    public void usar(Habilidad habilidad, Pokemon objetivo) {
+        habilidad.ejecutar(this, objetivo);
+    }
+
+    @Override
+    public boolean isNull() {
+        return false;
     }
 
     public void checkHP(){
@@ -92,6 +93,11 @@ public abstract class AbstractPokemon implements Pokemon {
                 System.out.println("No se tiene Pokemon en banca");
             }
         }
+    }
+
+    @Override
+    public void atacarCon(Ataque ataque, Pokemon objetivo) {
+        this.atacarCon(ataque, objetivo);
     }
 
     @Override
@@ -130,8 +136,4 @@ public abstract class AbstractPokemon implements Pokemon {
         this.checkHP();
     }
 
-    @Override
-    public ArrayList<Habilidad> getHabilidades() {
-        return Habilidades;
-    }
 }
