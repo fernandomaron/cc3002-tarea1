@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entrenador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PokemonAgua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PokemonAgua.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PokemonElectrico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PokemonElectrico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PokemonFuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PokemonFuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PokemonLucha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PokemonLucha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PokemonPlanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PokemonPlanta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PokemonPsiquico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PokemonPsiquico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing/EntrenadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/EntrenadorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,14 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3566" />
-          <entry key="txt" value="148" />
+          <entry key="java" value="3585" />
+          <entry key="txt" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3566" />
-          <entry key="PLAIN_TEXT" value="148" />
+          <entry key="JAVA" value="3585" />
+          <entry key="PLAIN_TEXT" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Testing/EntrenadorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+            <state relative-caret-position="-93">
+              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -368,7 +360,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556431799317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556432285533" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -487,7 +479,7 @@
       <workItem from="1556207195396" duration="6413000" />
       <workItem from="1556240122389" duration="2639000" />
       <workItem from="1556404356456" duration="7211000" />
-      <workItem from="1556414421995" duration="16511000" />
+      <workItem from="1556414421995" duration="16958000" />
     </task>
     <task id="LOCAL-00001" summary="Test de ataques entre pokemones por tipo">
       <created>1556419327360</created>
@@ -510,16 +502,17 @@
       <option name="project" value="LOCAL" />
       <updated>1556427098785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Test de los metodos de entrenador">
+      <created>1556431834550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556431834550</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokemonTest - 2019.04.28 at 02h 29m 52s.xml">
-      <configuration name="PokemonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EntrenadorTest - 2019.04.28 at 02h 39m 57s.xml">
-      <configuration name="EntrenadorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EntrenadorTest - 2019.04.28 at 02h 45m 51s.xml">
       <configuration name="EntrenadorTest" configurationId="JUnit" />
     </history-entry>
@@ -544,9 +537,15 @@
     <history-entry file="EntrenadorTest - 2019.04.28 at 03h 07m 08s.xml">
       <configuration name="EntrenadorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EntrenadorTest - 2019.04.28 at 03h 07m 50s.xml">
+      <configuration name="EntrenadorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EntrenadorTest - 2019.04.28 at 03h 10m 03s.xml">
+      <configuration name="EntrenadorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40161000" />
+    <option name="totallyTimeSpent" value="40608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -592,7 +591,8 @@
     <MESSAGE value="Test de ataques entre pokemones por tipo" />
     <MESSAGE value="Test de igualdades entre energias" />
     <MESSAGE value="Test de metodos en pokemon mas arreglos de implementacion en los pokemons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test de metodos en pokemon mas arreglos de implementacion en los pokemons" />
+    <MESSAGE value="Test de los metodos de entrenador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test de los metodos de entrenador" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/EnergiaNull.java" />
@@ -829,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Testing/EntrenadorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+        <state relative-caret-position="-93">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
