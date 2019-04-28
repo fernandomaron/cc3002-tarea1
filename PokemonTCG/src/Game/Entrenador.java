@@ -43,7 +43,7 @@ public class Entrenador {
             check=1;
         }
         if(Activo.isNull()){
-            Activo=Banca.get(0);
+            this.setActivo(Banca.get(0));
             Banca.remove(0);
         }
         if (check==0 && Banca.size()<5){
@@ -52,6 +52,18 @@ public class Entrenador {
         }
         else {
             System.out.println("No se puede jugar este pokemon");
+        }
+    }
+
+    public void checkActivo() {
+        if (Activo.getHP()<=0){
+            if(!Banca.isEmpty()){
+                Activo=Banca.get(0);
+                Banca.remove(0);
+            }
+            else {
+                Activo=new PokemonNull();
+            }
         }
     }
 }

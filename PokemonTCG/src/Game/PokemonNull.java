@@ -8,7 +8,8 @@ import Game.Pokemon;
 import java.util.ArrayList;
 
 public class PokemonNull implements Pokemon {
-
+    public PokemonNull(){
+    }
 
     @Override
     public boolean hasEnergy(ArrayList<Energia> costo) {
@@ -66,6 +67,51 @@ public class PokemonNull implements Pokemon {
 
     @Override
     public void usar(Habilidad habilidad, Pokemon objetivo) {
+
+    }
+
+    @Override
+    public int getHP() {
+        return 0;
+    }
+
+    @Override
+    public int getID() {
+        return 0;
+    }
+
+    @Override
+    public void setHP(int hp) {
+
+    }
+
+    @Override
+    public void setID(int id) {
+
+    }
+
+    @Override
+    public void setHabilidades(ArrayList<Habilidad> habilidades) {
+
+    }
+
+    @Override
+    public void checkHP() {
+
+    }
+
+    @Override
+    public void setTrainer(Entrenador entrenador) {
+
+    }
+
+    @Override
+    public Entrenador getTrainer() {
+        return null;
+    }
+
+    @Override
+    public void setEnergias(ArrayList<Energia> energias) {
 
     }
 

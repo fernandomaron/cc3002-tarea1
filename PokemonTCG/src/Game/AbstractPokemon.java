@@ -14,6 +14,10 @@ public abstract class AbstractPokemon implements Pokemon {
         Trainer = trainer;
     }
 
+    public Entrenador getTrainer(){
+        return this.Trainer;
+    }
+
     @Override
     public void jugar(Entrenador entrenador) {
         this.setTrainer(entrenador);
@@ -82,16 +86,8 @@ public abstract class AbstractPokemon implements Pokemon {
     }
 
     public void checkHP(){
-        if (this.getHP()<=0){
-            ArrayList<Pokemon>newBanca=Trainer.getBanca();
-            if (!newBanca.isEmpty()) {
-                Trainer.setActivo(newBanca.get(0));
-                newBanca.remove(0);
-                Trainer.setBanca(newBanca);
-            }
-            else{
-                System.out.println("No se tiene Pokemon en banca");
-            }
+        if (this.Trainer!=null) {
+            Trainer.checkActivo();
         }
     }
 
@@ -103,37 +99,31 @@ public abstract class AbstractPokemon implements Pokemon {
     @Override
     public void atacadoPorPsiquico(Ataque ataque) {
         this.atacadoPorPsiquico(ataque);
-        this.checkHP();
     }
 
     @Override
     public void atacadoPorPlanta(Ataque ataque) {
         this.atacadoPorPlanta(ataque);
-        this.checkHP();
     }
 
     @Override
     public void atacadoPorLucha(Ataque ataque) {
         this.atacadoPorLucha(ataque);
-        this.checkHP();
     }
 
     @Override
     public void atacadoPorFuego(Ataque ataque) {
         this.atacadoPorFuego(ataque);
-        this.checkHP();
     }
 
     @Override
     public void atacadoPorElectrico(Ataque ataque) {
         this.atacadoPorElectrico(ataque);
-        this.checkHP();
     }
 
     @Override
     public void atacadoPorAgua(Ataque ataque) {
         this.atacadoPorAgua(ataque);
-        this.checkHP();
     }
 
 }

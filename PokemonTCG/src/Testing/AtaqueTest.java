@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class AtaqueTest {
-    private Ataque ataque;
+    private Ataque Tackle;
     private PokemonAgua Totodile;
     private PokemonFuego Charmander;
     private PokemonLucha Makuhita;
@@ -19,7 +19,7 @@ public class AtaqueTest {
 
     @Before
     public void setUp(){
-        ataque=new Ataque(10, "Tackle", "The user slams into the enemy pokemon", new ArrayList<>());
+        Tackle=new Ataque(10, "Tackle", "The user slams into the enemy pokemon", new ArrayList<>());
         Totodile= new PokemonAgua(40, 158, new ArrayList<>(), new ArrayList<>());
         Charmander= new PokemonFuego(40, 4, new ArrayList<>(), new ArrayList<>());
         Makuhita= new PokemonLucha(40, 296, new ArrayList<>(), new ArrayList<>());
@@ -30,107 +30,107 @@ public class AtaqueTest {
 
     @Test
     public void atacadoPorAgua(){
-        Totodile.atacadoPorAgua(ataque);
+        Totodile.atacadoPorAgua(Tackle);
         assertEquals(30,Totodile.getHP());
-        Charmander.atacadoPorAgua(ataque);
+        Charmander.atacadoPorAgua(Tackle);
         assertEquals(20,Charmander.getHP());
-        Makuhita.atacadoPorAgua(ataque);
+        Makuhita.atacadoPorAgua(Tackle);
         assertEquals(30,Makuhita.getHP());
-        Magnemite.atacadoPorAgua(ataque);
+        Magnemite.atacadoPorAgua(Tackle);
         assertEquals(30,Magnemite.getHP());
-        Beldum.atacadoPorAgua(ataque);
+        Beldum.atacadoPorAgua(Tackle);
         assertEquals(30,Beldum.getHP());
-        Seedot.atacadoPorAgua(ataque);
+        Seedot.atacadoPorAgua(Tackle);
         assertEquals(40,Seedot.getHP());
     }
 
     @Test
     public void atacadoPorFuego(){
-        Totodile.atacadoPorFuego(ataque);
+        Totodile.atacadoPorFuego(Tackle);
         assertEquals(30,Totodile.getHP());
-        Charmander.atacadoPorFuego(ataque);
+        Charmander.atacadoPorFuego(Tackle);
         assertEquals(30,Charmander.getHP());
-        Makuhita.atacadoPorFuego(ataque);
+        Makuhita.atacadoPorFuego(Tackle);
         assertEquals(30,Makuhita.getHP());
-        Magnemite.atacadoPorFuego(ataque);
+        Magnemite.atacadoPorFuego(Tackle);
         assertEquals(30,Magnemite.getHP());
-        Beldum.atacadoPorFuego(ataque);
+        Beldum.atacadoPorFuego(Tackle);
         assertEquals(30,Beldum.getHP());
-        Seedot.atacadoPorFuego(ataque);
+        Seedot.atacadoPorFuego(Tackle);
         assertEquals(20,Seedot.getHP());
     }
 
     @Test
     public void atacadoPorPlanta(){
-        Totodile.atacadoPorPlanta(ataque);
+        Totodile.atacadoPorPlanta(Tackle);
         assertEquals(20,Totodile.getHP());
-        Charmander.atacadoPorPlanta(ataque);
+        Charmander.atacadoPorPlanta(Tackle);
         assertEquals(30,Charmander.getHP());
-        Makuhita.atacadoPorPlanta(ataque);
+        Makuhita.atacadoPorPlanta(Tackle);
         assertEquals(20,Makuhita.getHP());
-        Magnemite.atacadoPorPlanta(ataque);
+        Magnemite.atacadoPorPlanta(Tackle);
         assertEquals(30,Magnemite.getHP());
-        Beldum.atacadoPorPlanta(ataque);
+        Beldum.atacadoPorPlanta(Tackle);
         assertEquals(30,Beldum.getHP());
-        Seedot.atacadoPorPlanta(ataque);
+        Seedot.atacadoPorPlanta(Tackle);
         assertEquals(30,Seedot.getHP());
     }
 
     @Test
     public void atacadoPorElectrico(){
-        Totodile.atacadoPorElectrico(ataque);
+        Totodile.atacadoPorElectrico(Tackle);
         assertEquals(20,Totodile.getHP());
-        Charmander.atacadoPorElectrico(ataque);
+        Charmander.atacadoPorElectrico(Tackle);
         assertEquals(30,Charmander.getHP());
-        Makuhita.atacadoPorElectrico(ataque);
+        Makuhita.atacadoPorElectrico(Tackle);
         assertEquals(30,Makuhita.getHP());
-        Magnemite.atacadoPorElectrico(ataque);
+        Magnemite.atacadoPorElectrico(Tackle);
         assertEquals(30,Magnemite.getHP());
-        Beldum.atacadoPorElectrico(ataque);
+        Beldum.atacadoPorElectrico(Tackle);
         assertEquals(30,Beldum.getHP());
-        Seedot.atacadoPorElectrico(ataque);
+        Seedot.atacadoPorElectrico(Tackle);
         assertEquals(30,Seedot.getHP());
     }
 
     @Test
     public void atacadoPorLucha(){
-        Totodile.atacadoPorLucha(ataque);
+        Totodile.atacadoPorLucha(Tackle);
         assertEquals(40,Totodile.getHP());
-        Charmander.atacadoPorLucha(ataque);
+        Charmander.atacadoPorLucha(Tackle);
         assertEquals(30,Charmander.getHP());
-        Makuhita.atacadoPorLucha(ataque);
+        Makuhita.atacadoPorLucha(Tackle);
         assertEquals(30,Makuhita.getHP());
-        Magnemite.atacadoPorLucha(ataque);
+        Magnemite.atacadoPorLucha(Tackle);
         assertEquals(20,Magnemite.getHP());
-        Beldum.atacadoPorLucha(ataque);
+        Beldum.atacadoPorLucha(Tackle);
         assertEquals(40,Beldum.getHP());
-        Seedot.atacadoPorLucha(ataque);
+        Seedot.atacadoPorLucha(Tackle);
         assertEquals(30,Seedot.getHP());
     }
 
     @Test
     public void atacadoPorPsiquico(){
-        Totodile.atacadoPorPsiquico(ataque);
+        Totodile.atacadoPorPsiquico(Tackle);
         assertEquals(30,Totodile.getHP());
-        Charmander.atacadoPorPsiquico(ataque);
+        Charmander.atacadoPorPsiquico(Tackle);
         assertEquals(30,Charmander.getHP());
-        Makuhita.atacadoPorPsiquico(ataque);
+        Makuhita.atacadoPorPsiquico(Tackle);
         assertEquals(20,Makuhita.getHP());
-        Magnemite.atacadoPorPsiquico(ataque);
+        Magnemite.atacadoPorPsiquico(Tackle);
         assertEquals(30,Magnemite.getHP());
-        Beldum.atacadoPorPsiquico(ataque);
+        Beldum.atacadoPorPsiquico(Tackle);
         assertEquals(20,Beldum.getHP());
-        Seedot.atacadoPorPsiquico(ataque);
+        Seedot.atacadoPorPsiquico(Tackle);
         assertEquals(30,Seedot.getHP());
     }
 
     @Test
     public void atacarVariasVeces(){
-        Charmander.atacadoPorAgua(ataque);
+        Charmander.atacadoPorAgua(Tackle);
         assertEquals(20,Charmander.getHP());
-        Charmander.atacadoPorAgua(ataque);
+        Charmander.atacadoPorAgua(Tackle);
         assertEquals(0,Charmander.getHP());
-        Charmander.atacadoPorAgua(ataque);
+        Charmander.atacadoPorAgua(Tackle);
         assertEquals(-20,Charmander.getHP());
     }
 }

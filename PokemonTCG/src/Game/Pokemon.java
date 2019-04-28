@@ -26,4 +26,22 @@ public interface Pokemon extends Carta {
     ArrayList<Habilidad> getHabilidades();
 
     void usar(Habilidad habilidad, Pokemon objetivo);
+
+    int getHP();
+
+    int getID();
+
+    void setHP(int hp);
+
+    void setID(int id);
+
+    void setHabilidades(ArrayList<Habilidad> habilidades);
+
+    void checkHP();
+
+    void setTrainer(Entrenador entrenador);
+
+    Entrenador getTrainer();
+
+    void setEnergias(ArrayList<Energia> energias);
 }
