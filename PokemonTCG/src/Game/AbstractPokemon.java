@@ -2,20 +2,44 @@ package Game;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("InfiniteRecursion")
 public abstract class AbstractPokemon implements Pokemon {
-    protected int HP;
-    protected int ID;
-    protected ArrayList<Energia> Energias;
-    protected ArrayList<Habilidad> Habilidades;
-    protected Entrenador Trainer;
+    private int HP;
+    private int ID;
+    private ArrayList<Energia> Energias;
+    private ArrayList<Habilidad> Habilidades;
+    private Entrenador Trainer;
 
     public void agregarEnergia(Energia energia){
         Energias.add(energia);
     }
 
+    public int getHP() {
+        return HP;
+    }
+
+    public void setHP(int hp){
+        this.HP=hp;
+    }
+
+    public void setID(int id){
+        this.ID=id;
+    }
+
+    public int getID(){
+        return ID;
+    }
+
+    public void setEnergias(ArrayList<Energia> energias){
+        this.Energias=energias;
+    }
+
+    public void setHabilidades(ArrayList<Habilidad> habilidades){
+        this.Habilidades=habilidades;
+    }
     @Override
     public void jugar(Entrenador entrenador) {
-        Trainer=entrenador;
+        this.setTrainer(entrenador);
         entrenador.jugarPokemon(this);
     }
 
@@ -24,13 +48,17 @@ public abstract class AbstractPokemon implements Pokemon {
         return false;
     }
 
+    public void setTrainer(Entrenador trainer) {
+        Trainer = trainer;
+    }
+
     public void usar(Habilidad habilidad, Pokemon objetivo) {
         habilidad.ejecutar(this, objetivo);
     }
 
     public boolean hasEnergy(ArrayList<Energia> costo){
         ArrayList<Energia> check = (ArrayList<Energia>) Energias.clone();
-        int c=0;
+        int c;
         for(int i=0; i<costo.size(); i++){
             c=0;
             for(int j=0; j<check.size(); j++) {
@@ -53,7 +81,7 @@ public abstract class AbstractPokemon implements Pokemon {
     }
 
     public void checkHP(){
-        if (HP<=0){
+        if (this.getHP()<=0){
             ArrayList<Pokemon>newBanca=Trainer.getBanca();
             if (!newBanca.isEmpty()) {
                 Trainer.setActivo(newBanca.get(0));

@@ -17,8 +17,6 @@ public class PokemonNull implements Pokemon {
 
     @Override
     public void agregarEnergia(Energia energia) {
-        System.out.println("No se puede agregar energia");
-        return;
     }
 
     @Override
@@ -28,7 +26,7 @@ public class PokemonNull implements Pokemon {
 
     @Override
     public void atacarCon(Ataque ataque, Pokemon objetivo) {
-        return;
+
     }
 
     @Override
@@ -62,7 +60,17 @@ public class PokemonNull implements Pokemon {
     }
 
     @Override
+    public ArrayList<Habilidad> getHabilidades() {
+        return null;
+    }
+
+    @Override
+    public void usar(Habilidad habilidad, Pokemon objetivo) {
+
+    }
+
+    @Override
     public void jugar(Entrenador entrenador) {
-        return;
+
     }
 }
