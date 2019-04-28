@@ -2,6 +2,10 @@ package Game;
 
 import java.util.ArrayList;
 
+/**
+ * @author Fernando Maron
+ * Class for abilities that perform an attack
+ */
 public class Ataque implements Habilidad {
     private int Dmg;
     private String Nombre;

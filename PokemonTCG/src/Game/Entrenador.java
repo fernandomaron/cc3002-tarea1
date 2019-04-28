@@ -1,8 +1,8 @@
 package Game;
 
-import Game.Carta;
-import Game.Energia;
-
+/**
+ * @author Fernando Maron
+ */
 import java.util.ArrayList;
 
 public class Entrenador {

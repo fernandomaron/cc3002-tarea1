@@ -3,6 +3,10 @@ package Game;
 import java.util.ArrayList;
 
 @SuppressWarnings("InfiniteRecursion")
+/**
+ * @author Fernando Maron
+ * Class that sets a base for all different classes of pokemon, except for the null class
+ */
 public abstract class AbstractPokemon implements Pokemon {
     private int HP;
     private int ID;
@@ -68,7 +72,14 @@ public abstract class AbstractPokemon implements Pokemon {
     }
 
     public void setHabilidades(ArrayList<Habilidad> habilidades){
-        this.Habilidades=habilidades;
+        if(habilidades.size()<5) {
+            this.Habilidades = habilidades;
+        }
+        else{
+            for(int i=0;i<5;i++){
+                this.Habilidades.add(habilidades.get(i));
+            }
+        }
     }
 
     @Override

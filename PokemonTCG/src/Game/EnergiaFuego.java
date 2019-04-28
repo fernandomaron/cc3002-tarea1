@@ -1,5 +1,8 @@
 package Game;
 
+/**
+ * @author Fernando Maron
+ */
 public class EnergiaFuego extends Energia {
     public EnergiaFuego(){
     }

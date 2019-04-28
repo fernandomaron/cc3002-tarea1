@@ -1,12 +1,11 @@
 package Game;
 
-import Game.Ataque;
-import Game.Energia;
-import Game.Entrenador;
-import Game.Pokemon;
-
 import java.util.ArrayList;
 
+/**
+ * @author Fernando Maron
+ * This class was created to act as a null counterpart for the Pokemon class
+ */
 public class PokemonNull implements Pokemon {
     public PokemonNull(){
     }
