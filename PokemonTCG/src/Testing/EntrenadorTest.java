@@ -1,5 +1,11 @@
 package Testing;
 import Game.*;
+import Game.Carta.*;
+import Game.Carta.Energia.Energia;
+import Game.Carta.Energia.EnergiaElectrico;
+import Game.Carta.Pokemon.*;
+import Game.Habilidad.Ataque;
+import Game.Habilidad.Habilidad;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -42,7 +48,7 @@ public class EntrenadorTest {
         Mano= new ArrayList<>();
         Mano.add(Magnemite);
         Mano.add(new EnergiaElectrico());
-        Red=new Entrenador(new PokemonNull(),new ArrayList<Pokemon>(), Mano);
+        Red=new Entrenador(new PokemonNull(),new ArrayList<>(), Mano);
     }
 
     @Test
@@ -63,9 +69,12 @@ public class EntrenadorTest {
         assertEquals(30, Beldum.getHP());
 
         assertTrue(Red.getBanca().isEmpty());
-        Red.jugarPokemon(Totodile);
+        Totodile.setTrainer(Red);
+        Totodile.jugar();
         assertFalse(Red.getBanca().isEmpty());
-        Red.jugarEnergia(new EnergiaElectrico());
+        Energia ele=new EnergiaElectrico();
+        ele.setTrainer(Red);
+        ele.jugar();
         Red.usarHabilidad(1,Beldum);
         assertEquals(10,Beldum.getHP());
 
@@ -74,38 +83,6 @@ public class EntrenadorTest {
         Makuhita.atacarCon(Thunderbolt,Magnemite); //Si, Makuhita genera tanta friccion con sus puños que tira un rayo ;)
         assertEquals(Totodile,Red.getActivo());
         assertTrue(Red.getBanca().isEmpty());
-    }
-
-    @Test
-    public void jugarPokemon(){
-        assertTrue(Red.getActivo().isNull());
-        assertTrue(Red.getBanca().isEmpty());
-        Red.jugarPokemon(new PokemonElectrico());
-        assertFalse(Red.getActivo().isNull());
-        assertTrue(Red.getBanca().isEmpty());
-        ArrayList<Pokemon> Banca= new ArrayList<>();
-        Banca.add(new PokemonElectrico());
-        Banca.add(new PokemonElectrico());
-        Banca.add(new PokemonElectrico());
-        Banca.add(new PokemonElectrico());
-        Red.setBanca((ArrayList<Pokemon>) Banca.clone());
-        assertFalse(Red.getBanca().isEmpty());
-        assertTrue(Red.getBanca().size()<5);
-        Red.jugarPokemon(new PokemonElectrico());
-        assertNotEquals(Banca,Red.getBanca());
-        Banca=Red.getBanca();
-        Red.jugarPokemon(new PokemonElectrico());
-        assertEquals(Banca,Red.getBanca());
-
-        Red.setActivo(new PokemonNull());
-        assertTrue(Red.getActivo().isNull());
-        Banca= new ArrayList<>();
-        Banca.add(Magnemite);
-        Red.setBanca(Banca);
-        assertFalse(Red.getBanca().isEmpty());
-        Red.jugarPokemon(Makuhita);
-        assertEquals(Magnemite,Red.getActivo());
-        assertEquals(Makuhita,Red.getBanca().get(0));
     }
 
     @Test

@@ -1,4 +1,9 @@
-package Game;
+package Game.Carta.Pokemon;
+
+import Game.Carta.Energia.Energia;
+import Game.Habilidad.Ataque;
+import Game.Entrenador;
+import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;
 
@@ -100,6 +105,11 @@ public class PokemonNull implements Pokemon {
     }
 
     @Override
+    public void jugar() {
+
+    }
+
+    @Override
     public void setTrainer(Entrenador entrenador) {
 
     }
@@ -111,11 +121,6 @@ public class PokemonNull implements Pokemon {
 
     @Override
     public void setEnergias(ArrayList<Energia> energias) {
-
-    }
-
-    @Override
-    public void jugar(Entrenador entrenador) {
 
     }
 }

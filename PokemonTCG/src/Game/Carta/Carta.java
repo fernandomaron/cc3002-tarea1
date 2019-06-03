@@ -1,4 +1,6 @@
-package Game;
+package Game.Carta;
+
+import Game.Entrenador;
 
 /**
  * @author Fernando Maron
@@ -8,9 +10,8 @@ package Game;
 public interface Carta {
     /**
      * This method allows the interaction between trainer and card
-     * @param entrenador it asks for a trainer parameter in order to establish which trainer has being assigned
-     *                   to the card, so it can use it's effects accordingly.
      */
-    void jugar(Entrenador entrenador);
+    void jugar();
+    void setTrainer(Entrenador entrenador);
 
 }

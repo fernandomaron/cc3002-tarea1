@@ -1,4 +1,9 @@
-package Game;
+package Game.Carta.Pokemon;
+
+import Game.*;
+import Game.Carta.Energia.Energia;
+import Game.Habilidad.Ataque;
+import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;
 
@@ -23,9 +28,21 @@ public abstract class AbstractPokemon implements Pokemon {
     }
 
     @Override
-    public void jugar(Entrenador entrenador) {
-        this.setTrainer(entrenador);
-        entrenador.jugarPokemon(this);
+    public void jugar() {
+        if(Trainer.getActivo().isNull() && Trainer.getBanca().isEmpty()){
+            Trainer.setActivo(this);
+        }
+        else if(Trainer.getActivo().isNull() && !Trainer.getBanca().isEmpty()){
+            Trainer.setActivo(Trainer.getBanca().get(0));
+            Trainer.getBanca().remove(0);
+            Trainer.getBanca().add(this);
+        }
+        else if (Trainer.getBanca().size()<5){
+            Trainer.getBanca().add(this);
+        }
+        else {
+            System.out.println("No se puede jugar este pokemon");
+        }
     }
 
     public int getHP() {
@@ -55,16 +72,16 @@ public abstract class AbstractPokemon implements Pokemon {
     public boolean hasEnergy(ArrayList<Energia> costo){
         ArrayList<Energia> check = (ArrayList<Energia>) Energias.clone();
         int c;
-        for(int i=0; i<costo.size(); i++){
-            c=0;
-            for(int j=0; j<check.size(); j++) {
-                if (costo.get(i).equals(check.get(j))) {
+        for (Energia aCosto : costo) {
+            c = 0;
+            for (int j = 0; j < check.size(); j++) {
+                if (aCosto.equals(check.get(j))) {
                     check.remove(j);
-                    c=1;
+                    c = 1;
                     break;
                 }
             }
-            if (c==0){
+            if (c == 0) {
                 return false;
             }
         }

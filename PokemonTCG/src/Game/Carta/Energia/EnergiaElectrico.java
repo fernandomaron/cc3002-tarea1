@@ -1,4 +1,4 @@
-package Game;
+package Game.Carta.Energia;
 
 /**
  * @author Fernando Maron
@@ -9,9 +9,6 @@ public class EnergiaElectrico extends Energia {
 
     @Override
     public boolean equals(Object energia) {
-        if (energia instanceof EnergiaElectrico){
-            return true;
-        }
-        return false;
+        return energia instanceof EnergiaElectrico;
     }
 }

@@ -1,4 +1,10 @@
-package Game;
+package Game.Carta.Pokemon;
+
+import Game.Carta.Carta;
+import Game.Carta.Energia.Energia;
+import Game.Habilidad.Ataque;
+import Game.Entrenador;
+import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;
 

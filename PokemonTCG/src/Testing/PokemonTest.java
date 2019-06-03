@@ -1,5 +1,12 @@
 package Testing;
 import Game.*;
+import Game.Carta.Energia.Energia;
+import Game.Carta.Energia.EnergiaAgua;
+import Game.Carta.Energia.EnergiaElectrico;
+import Game.Carta.Energia.EnergiaFuego;
+import Game.Carta.Pokemon.*;
+import Game.Habilidad.Ataque;
+import Game.Habilidad.Habilidad;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,6 +17,7 @@ import static org.junit.Assert.*;
 public class PokemonTest {
     private Pokemon Magnemite;
     private Pokemon Beldum;
+    private Entrenador Red;
     private Ataque Tackle;
     private Ataque Thunderbolt;
     private ArrayList<Energia> Costo1;
@@ -20,6 +28,7 @@ public class PokemonTest {
 
     @Before
     public void setUp(){
+        Red= new Entrenador();
         Costo1=new ArrayList<>();
         Costo1.add(new EnergiaElectrico());
         Costo1.add(new EnergiaFuego());
@@ -33,6 +42,8 @@ public class PokemonTest {
         Abilities.add(Thunderbolt);
         Magnemite= new PokemonElectrico(40, 81, new ArrayList<>(),Abilities);
         Beldum= new PokemonPsiquico(100, 374, new ArrayList<>(), new ArrayList<>());
+        Beldum.setTrainer(Red);
+        Magnemite.setTrainer(Red);
     }
 
     @Test
@@ -86,8 +97,44 @@ public class PokemonTest {
         Beldum.setID(203);
         assertEquals(203,Beldum.getID());
         Entrenador Ash=new Entrenador();
-        assertEquals(null, Magnemite.getTrainer());
+        assertEquals(Red, Magnemite.getTrainer());
         Magnemite.setTrainer(Ash);
         assertEquals(Ash,Magnemite.getTrainer());
+    }
+
+    @Test
+    public void jugarPokemon(){
+        assertTrue(Red.getActivo().isNull());
+        assertTrue(Red.getBanca().isEmpty());
+        Beldum.jugar();
+        assertFalse(Red.getActivo().isNull());
+        assertTrue(Red.getBanca().isEmpty());
+        ArrayList<Pokemon> Banca= new ArrayList<>();
+        Banca.add(new PokemonElectrico());
+        Banca.add(new PokemonElectrico());
+        Banca.add(new PokemonElectrico());
+        Banca.add(new PokemonElectrico());
+        Red.setBanca((ArrayList<Pokemon>) Banca.clone());
+        assertFalse(Red.getBanca().isEmpty());
+        assertTrue(Red.getBanca().size()<5);
+        Pokemon Bulbasaur = new PokemonPlanta();
+        Bulbasaur.setTrainer(Red);
+        Bulbasaur.jugar();
+        assertNotEquals(Banca,Red.getBanca());
+        Banca=Red.getBanca();
+        Pokemon Pikachu=new PokemonElectrico();
+        Pikachu.setTrainer(Red);
+        Pikachu.jugar();
+        assertEquals(Banca,Red.getBanca());
+
+        Red.setActivo(new PokemonNull());
+        assertTrue(Red.getActivo().isNull());
+        Banca= new ArrayList<>();
+        Banca.add(Magnemite);
+        Red.setBanca(Banca);
+        assertFalse(Red.getBanca().isEmpty());
+        Beldum.jugar();
+        assertEquals(Magnemite,Red.getActivo());
+        assertEquals(Beldum,Red.getBanca().get(0));
     }
 }

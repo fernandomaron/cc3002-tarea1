@@ -3,6 +3,11 @@ package Game;
 /**
  * @author Fernando Maron
  */
+import Game.Carta.Carta;
+import Game.Carta.Pokemon.Pokemon;
+import Game.Carta.Pokemon.PokemonNull;
+import Game.Habilidad.Habilidad;
+
 import java.util.ArrayList;
 
 public class Entrenador {
@@ -22,12 +27,10 @@ public class Entrenador {
     public void usarHabilidad(int index, Pokemon objetivo){
         Activo.usar(Activo.getHabilidades().get(index), objetivo);
     }
-    public void jugarCarta(int index){
-        Mano.get(index).jugar(this);
+    public void jugarCarta(int index) {
+        Mano.get(index).setTrainer(this);
+        Mano.get(index).jugar();
         Mano.remove(index);
-    }
-    public void jugarEnergia(Energia energia) {
-        Activo.agregarEnergia(energia);
     }
 
     public void setActivo(Pokemon pokemon){
@@ -52,22 +55,6 @@ public class Entrenador {
     }
 
     public void setBanca(ArrayList<Pokemon> newBanca){Banca=newBanca;}
-    public void jugarPokemon(Pokemon pokemon){
-        if(this.getActivo().isNull() && Banca.isEmpty()){
-            this.setActivo(pokemon);
-        }
-        else if(this.getActivo().isNull() && !Banca.isEmpty()){
-            this.setActivo(Banca.get(0));
-            Banca.remove(0);
-            Banca.add(pokemon);
-        }
-        else if (Banca.size()<5){
-            Banca.add(pokemon);
-        }
-        else {
-            System.out.println("No se puede jugar este pokemon");
-        }
-    }
 
     public void checkActivo() {
         if (Activo.getHP()<=0){

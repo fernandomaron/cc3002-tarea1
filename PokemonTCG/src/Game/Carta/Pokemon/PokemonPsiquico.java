@@ -1,17 +1,21 @@
-package Game;
+package Game.Carta.Pokemon;
+
+import Game.Carta.Energia.Energia;
+import Game.Habilidad.Ataque;
+import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;
 
 /**
  * @author Fernando Maron
- * Class for electric type pokemons
+ * Class for psychic type pokemons
  */
-public class PokemonElectrico extends AbstractPokemon {
-    public PokemonElectrico(){
-        this(0,0,new ArrayList<>(), new ArrayList<>());
+public class PokemonPsiquico extends AbstractPokemon {
+    public PokemonPsiquico() {
+        this(0, 0, new ArrayList<>(), new ArrayList<>());
     }
 
-    public PokemonElectrico (int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad>habilidades){
+    public PokemonPsiquico(int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad> habilidades) {
         this.setHP(hp);
         this.setID(id);
         this.setEnergias(energias);
@@ -24,8 +28,8 @@ public class PokemonElectrico extends AbstractPokemon {
      * @param objetivo This pokemon's target
      */
     public void atacarCon(Ataque ataque, Pokemon objetivo) {
-        objetivo.atacadoPorElectrico(ataque);
-
+        objetivo.atacadoPorPsiquico(ataque);
+        this.checkHP();
     }
 
     /**
@@ -34,7 +38,7 @@ public class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPsiquico(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setHP(this.getHP()-ataque.getDmg()*2);
         this.checkHP();
     }
 
@@ -54,7 +58,7 @@ public class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorLucha(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg()*2);
+        this.setHP(this.getHP()-(Math.max(ataque.getDmg()-30,0)));
         this.checkHP();
     }
 

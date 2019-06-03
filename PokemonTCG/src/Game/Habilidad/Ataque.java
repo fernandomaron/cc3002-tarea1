@@ -1,4 +1,7 @@
-package Game;
+package Game.Habilidad;
+
+import Game.Carta.Energia.Energia;
+import Game.Carta.Pokemon.Pokemon;
 
 import java.util.ArrayList;
 
@@ -13,10 +16,7 @@ public class Ataque implements Habilidad {
     private ArrayList<Energia> Costo;
 
     public Ataque(){
-        Dmg=0;
-        Nombre="";
-        Descripcion="";
-        Costo=new ArrayList<>();
+        this(0, "", "", new ArrayList<>());
     }
 
     public Ataque(int dmg, String nombre, String descripcion, ArrayList<Energia> costo){

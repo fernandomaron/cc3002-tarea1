@@ -1,17 +1,21 @@
-package Game;
+package Game.Carta.Pokemon;
+
+import Game.Carta.Energia.Energia;
+import Game.Habilidad.Ataque;
+import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;
 
 /**
  * @author Fernando Maron
- * Class for grass type pokemons
+ * Class for electric type pokemons
  */
-public class PokemonPlanta extends AbstractPokemon {
-    public PokemonPlanta(){
+public class PokemonElectrico extends AbstractPokemon {
+    public PokemonElectrico(){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }
 
-    public PokemonPlanta (int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad>habilidades){
+    public PokemonElectrico (int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad>habilidades){
         this.setHP(hp);
         this.setID(id);
         this.setEnergias(energias);
@@ -24,7 +28,8 @@ public class PokemonPlanta extends AbstractPokemon {
      * @param objetivo This pokemon's target
      */
     public void atacarCon(Ataque ataque, Pokemon objetivo) {
-        objetivo.atacadoPorPlanta(ataque);
+        objetivo.atacadoPorElectrico(ataque);
+
     }
 
     /**
@@ -53,7 +58,7 @@ public class PokemonPlanta extends AbstractPokemon {
      */
     @Override
     public void atacadoPorLucha(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setHP(this.getHP()-ataque.getDmg()*2);
         this.checkHP();
     }
 
@@ -63,7 +68,7 @@ public class PokemonPlanta extends AbstractPokemon {
      */
     @Override
     public void atacadoPorFuego(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg()*2);
+        this.setHP(this.getHP()-ataque.getDmg());
         this.checkHP();
     }
 
@@ -83,7 +88,7 @@ public class PokemonPlanta extends AbstractPokemon {
      */
     @Override
     public void atacadoPorAgua(Ataque ataque) {
-        this.setHP(this.getHP()-(Math.max(ataque.getDmg()-30,0)));
+        this.setHP(this.getHP()-ataque.getDmg());
         this.checkHP();
     }
 }

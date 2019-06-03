@@ -1,4 +1,6 @@
-package Game;
+package Game.Habilidad;
+
+import Game.Carta.Pokemon.Pokemon;
 
 /**
  * @author Fernando Maron

@@ -1,16 +1,21 @@
-package Game;
+package Game.Carta.Pokemon;
+
+import Game.Carta.Energia.Energia;
+import Game.Habilidad.Ataque;
+import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;
 
 /**
  * @author Fernando Maron
- * Class for water type pokemons
+ * Class for fighting type pokemons
  */
-public class PokemonAgua extends AbstractPokemon {
-    public PokemonAgua (){
+public class PokemonLucha extends AbstractPokemon {
+    public PokemonLucha(){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }
-    public PokemonAgua (int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad>habilidades){
+
+    public PokemonLucha (int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad>habilidades){
         this.setHP(hp);
         this.setID(id);
         this.setEnergias(energias);
@@ -22,9 +27,9 @@ public class PokemonAgua extends AbstractPokemon {
      * @param ataque Attack the current pokemon will perform
      * @param objetivo This pokemon's target
      */
-    @Override
     public void atacarCon(Ataque ataque, Pokemon objetivo) {
-        objetivo.atacadoPorAgua(ataque);
+        objetivo.atacadoPorLucha(ataque);
+        this.checkHP();
     }
 
     /**
@@ -33,7 +38,8 @@ public class PokemonAgua extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPsiquico(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setHP(this.getHP()-ataque.getDmg()*2);
+        this.checkHP();
     }
 
     /**
@@ -52,7 +58,7 @@ public class PokemonAgua extends AbstractPokemon {
      */
     @Override
     public void atacadoPorLucha(Ataque ataque) {
-        this.setHP(this.getHP()-(Math.max(ataque.getDmg()-30,0)));
+        this.setHP(this.getHP()-ataque.getDmg());
         this.checkHP();
     }
 
@@ -72,7 +78,7 @@ public class PokemonAgua extends AbstractPokemon {
      */
     @Override
     public void atacadoPorElectrico(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg()*2);
+        this.setHP(this.getHP()-ataque.getDmg());
         this.checkHP();
     }
 
