@@ -11,59 +11,62 @@ import Game.Habilidad.Habilidad;
 import java.util.ArrayList;
 
 public class Entrenador {
-    private Pokemon Activo;
-    private ArrayList<Pokemon> Banca;
-    private ArrayList<Carta> Mano;
+    private Pokemon Active;
+    private ArrayList<Pokemon> Bench;
+    private ArrayList<Carta> Hand;
+    private ArrayList<Carta> Deck;
+
     public Entrenador(){
         this(new PokemonNull(), new ArrayList<>(), new ArrayList<>());
     }
     public Entrenador(Pokemon activo,ArrayList<Pokemon> banca,ArrayList<Carta> mano){
-        Activo=activo;
-        Banca=banca;
-        Mano=mano;
+        Active =activo;
+        Bench =banca;
+        Hand =mano;
     }
 
-    public ArrayList<Habilidad> habilidadesActivo(){return Activo.getHabilidades();}
+    public ArrayList<Habilidad> habilidadesActivo(){return Active.getHabilidades();}
     public void usarHabilidad(int index, Pokemon objetivo){
-        Activo.usar(Activo.getHabilidades().get(index), objetivo);
+        Active.usar(Active.getHabilidades().get(index), objetivo);
     }
     public void jugarCarta(int index) {
-        Mano.get(index).setTrainer(this);
-        Mano.get(index).jugar();
-        Mano.remove(index);
+        Hand.get(index).setTrainer(this);
+        Hand.get(index).jugar();
+        Hand.remove(index);
     }
 
-    public void setActivo(Pokemon pokemon){
-        Activo=pokemon;
+    public void setActive(Pokemon pokemon){
+        Active =pokemon;
     }
 
-    public Pokemon getActivo(){return Activo;}
+    public Pokemon getActive(){return Active;}
 
-    public ArrayList<Pokemon> getBanca(){
-        return Banca;
+    public ArrayList<Pokemon> getBench(){
+        return Bench;
     }
 
     public void addToMano(Carta carta){
-        Mano.add(carta);
+        Hand.add(carta);
     }
-    public void setMano(ArrayList<Carta> mano) {
-        Mano = mano;
-    }
-
-    public ArrayList<Carta> getMano() {
-        return Mano;
+    public void setHand(ArrayList<Carta> hand) {
+        Hand = hand;
     }
 
-    public void setBanca(ArrayList<Pokemon> newBanca){Banca=newBanca;}
+    public ArrayList<Carta> getHand() {
+        return Hand;
+    }
+
+    public void setBench(ArrayList<Pokemon> newBanca){
+        Bench =newBanca;}
 
     public void checkActivo() {
-        if (Activo.getHP()<=0){
-            if(!Banca.isEmpty()){
-                Activo=Banca.get(0);
-                Banca.remove(0);
+        if (Active.getHP()<=0){
+            if(!Bench.isEmpty()){
+                Active = Bench.get(0);
+                Bench.remove(0);
             }
             else {
-                Activo=new PokemonNull();
+                Active =new PokemonNull();
             }
         }
     }

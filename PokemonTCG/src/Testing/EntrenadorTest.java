@@ -53,25 +53,25 @@ public class EntrenadorTest {
 
     @Test
     public void firstCards(){
-        assertFalse(Red.getMano().isEmpty());
-        assertTrue(Red.getActivo().isNull());
+        assertFalse(Red.getHand().isEmpty());
+        assertTrue(Red.getActive().isNull());
         Red.jugarCarta(0);
-        assertFalse(Red.getMano().isEmpty());
-        assertFalse(Red.getActivo().isNull());
+        assertFalse(Red.getHand().isEmpty());
+        assertFalse(Red.getActive().isNull());
         assertEquals(40, Beldum.getHP());
 
         assertEquals(Abilities1,Red.habilidadesActivo());
         Red.usarHabilidad(0,Beldum);
         assertEquals(40, Beldum.getHP());
         Red.jugarCarta(0);
-        assertTrue(Red.getMano().isEmpty());
+        assertTrue(Red.getHand().isEmpty());
         Red.usarHabilidad(0,Beldum);
         assertEquals(30, Beldum.getHP());
 
-        assertTrue(Red.getBanca().isEmpty());
+        assertTrue(Red.getBench().isEmpty());
         Totodile.setTrainer(Red);
         Totodile.jugar();
-        assertFalse(Red.getBanca().isEmpty());
+        assertFalse(Red.getBench().isEmpty());
         Energia ele=new EnergiaElectrico();
         ele.setTrainer(Red);
         ele.jugar();
@@ -81,16 +81,16 @@ public class EntrenadorTest {
         Makuhita.agregarEnergia(new EnergiaElectrico());
         Makuhita.agregarEnergia(new EnergiaElectrico());
         Makuhita.atacarCon(Thunderbolt,Magnemite); //Si, Makuhita genera tanta friccion con sus puños que tira un rayo ;)
-        assertEquals(Totodile,Red.getActivo());
-        assertTrue(Red.getBanca().isEmpty());
+        assertEquals(Totodile,Red.getActive());
+        assertTrue(Red.getBench().isEmpty());
     }
 
     @Test
     public void addToMano(){
-        assertFalse(Red.getMano().isEmpty());
-        Red.setMano(new ArrayList<>());
-        assertTrue(Red.getMano().isEmpty());
+        assertFalse(Red.getHand().isEmpty());
+        Red.setHand(new ArrayList<>());
+        assertTrue(Red.getHand().isEmpty());
         Red.addToMano(Makuhita);
-        assertFalse(Red.getMano().isEmpty());
+        assertFalse(Red.getHand().isEmpty());
     }
 }

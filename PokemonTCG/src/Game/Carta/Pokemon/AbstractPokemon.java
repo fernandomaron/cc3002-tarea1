@@ -4,6 +4,7 @@ import Game.*;
 import Game.Carta.Energia.Energia;
 import Game.Habilidad.Ataque;
 import Game.Habilidad.Habilidad;
+import Game.Visitor.Visitor;
 
 import java.util.ArrayList;
 
@@ -27,18 +28,20 @@ public abstract class AbstractPokemon implements Pokemon {
         return this.Trainer;
     }
 
-    @Override
+    public void accept(Visitor visitor){
+        visitor.visitPokemon(this);
+    }
     public void jugar() {
-        if(Trainer.getActivo().isNull() && Trainer.getBanca().isEmpty()){
-            Trainer.setActivo(this);
+        if(Trainer.getActive().isNull() && Trainer.getBench().isEmpty()){
+            Trainer.setActive(this);
         }
-        else if(Trainer.getActivo().isNull() && !Trainer.getBanca().isEmpty()){
-            Trainer.setActivo(Trainer.getBanca().get(0));
-            Trainer.getBanca().remove(0);
-            Trainer.getBanca().add(this);
+        else if(Trainer.getActive().isNull() && !Trainer.getBench().isEmpty()){
+            Trainer.setActive(Trainer.getBench().get(0));
+            Trainer.getBench().remove(0);
+            Trainer.getBench().add(this);
         }
-        else if (Trainer.getBanca().size()<5){
-            Trainer.getBanca().add(this);
+        else if (Trainer.getBench().size()<5){
+            Trainer.getBench().add(this);
         }
         else {
             System.out.println("No se puede jugar este pokemon");

@@ -4,6 +4,7 @@ import Game.Carta.Energia.Energia;
 import Game.Habilidad.Ataque;
 import Game.Entrenador;
 import Game.Habilidad.Habilidad;
+import Game.Visitor.Visitor;
 
 import java.util.ArrayList;
 
@@ -105,8 +106,8 @@ public class PokemonNull implements Pokemon {
     }
 
     @Override
-    public void jugar() {
-
+    public void accept(Visitor visitor) {
+        visitor.visitPokemon(this);
     }
 
     @Override

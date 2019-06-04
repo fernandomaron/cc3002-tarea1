@@ -2,6 +2,7 @@ package Game.Carta.Energia;
 
 import Game.Carta.Carta;
 import Game.Entrenador;
+import Game.Visitor.Visitor;
 
 /**
  * @author Fernando Maron
@@ -16,8 +17,8 @@ public abstract class Energia implements Carta {
         Trainer = trainer;
     }
 
-    @Override
-    public void jugar(){Trainer.getActivo().agregarEnergia(this);
+    public void accept(Visitor visitor){
+        visitor.visitEnergy(this);
     }
 
     @Override

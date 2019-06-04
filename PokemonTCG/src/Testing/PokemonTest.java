@@ -104,37 +104,37 @@ public class PokemonTest {
 
     @Test
     public void jugarPokemon(){
-        assertTrue(Red.getActivo().isNull());
-        assertTrue(Red.getBanca().isEmpty());
+        assertTrue(Red.getActive().isNull());
+        assertTrue(Red.getBench().isEmpty());
         Beldum.jugar();
-        assertFalse(Red.getActivo().isNull());
-        assertTrue(Red.getBanca().isEmpty());
+        assertFalse(Red.getActive().isNull());
+        assertTrue(Red.getBench().isEmpty());
         ArrayList<Pokemon> Banca= new ArrayList<>();
         Banca.add(new PokemonElectrico());
         Banca.add(new PokemonElectrico());
         Banca.add(new PokemonElectrico());
         Banca.add(new PokemonElectrico());
-        Red.setBanca((ArrayList<Pokemon>) Banca.clone());
-        assertFalse(Red.getBanca().isEmpty());
-        assertTrue(Red.getBanca().size()<5);
+        Red.setBench((ArrayList<Pokemon>) Banca.clone());
+        assertFalse(Red.getBench().isEmpty());
+        assertTrue(Red.getBench().size()<5);
         Pokemon Bulbasaur = new PokemonPlanta();
         Bulbasaur.setTrainer(Red);
         Bulbasaur.jugar();
-        assertNotEquals(Banca,Red.getBanca());
-        Banca=Red.getBanca();
+        assertNotEquals(Banca,Red.getBench());
+        Banca=Red.getBench();
         Pokemon Pikachu=new PokemonElectrico();
         Pikachu.setTrainer(Red);
         Pikachu.jugar();
-        assertEquals(Banca,Red.getBanca());
+        assertEquals(Banca,Red.getBench());
 
-        Red.setActivo(new PokemonNull());
-        assertTrue(Red.getActivo().isNull());
+        Red.setActive(new PokemonNull());
+        assertTrue(Red.getActive().isNull());
         Banca= new ArrayList<>();
         Banca.add(Magnemite);
-        Red.setBanca(Banca);
-        assertFalse(Red.getBanca().isEmpty());
+        Red.setBench(Banca);
+        assertFalse(Red.getBench().isEmpty());
         Beldum.jugar();
-        assertEquals(Magnemite,Red.getActivo());
-        assertEquals(Beldum,Red.getBanca().get(0));
+        assertEquals(Magnemite,Red.getActive());
+        assertEquals(Beldum,Red.getBench().get(0));
     }
 }

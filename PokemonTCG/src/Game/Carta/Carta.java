@@ -1,6 +1,7 @@
 package Game.Carta;
 
 import Game.Entrenador;
+import Game.Visitor.Visitor;
 
 /**
  * @author Fernando Maron
@@ -11,7 +12,7 @@ public interface Carta {
     /**
      * This method allows the interaction between trainer and card
      */
-    void jugar();
+    void accept(Visitor visitor);
     void setTrainer(Entrenador entrenador);
 
 }
