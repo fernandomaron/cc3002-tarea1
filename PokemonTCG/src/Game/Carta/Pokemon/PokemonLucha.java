@@ -1,7 +1,7 @@
 package Game.Carta.Pokemon;
 
 import Game.Carta.Energia.Energia;
-import Game.Habilidad.Ataque;
+import Game.Habilidad.Ataques.Ataque;
 import Game.Habilidad.Habilidad;
 
 import java.util.ArrayList;

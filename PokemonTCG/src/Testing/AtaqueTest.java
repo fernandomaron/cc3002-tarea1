@@ -1,6 +1,6 @@
 package Testing;
 import Game.Carta.Pokemon.*;
-import Game.Habilidad.Ataque;
+import Game.Habilidad.Ataques.Ataque;
 import org.junit.Before;
 import org.junit.Test;
 

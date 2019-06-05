@@ -5,7 +5,7 @@ import Game.Carta.Energia.EnergiaAgua;
 import Game.Carta.Energia.EnergiaElectrico;
 import Game.Carta.Energia.EnergiaFuego;
 import Game.Carta.Pokemon.*;
-import Game.Habilidad.Ataque;
+import Game.Habilidad.Ataques.Ataque;
 import Game.Habilidad.Habilidad;
 import org.junit.Before;
 import org.junit.Test;
