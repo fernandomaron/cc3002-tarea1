@@ -1,8 +1,8 @@
 package game.carta.objeto;
 
-public class P extends O {
+public class Potion extends Objeto {
     private int X;
-    public P(int x){
+    public Potion(int x){
         super("Potion","Remove up to x damage counters from the target pokemon");
         X=x;
     }

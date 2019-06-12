@@ -1,8 +1,8 @@
 package game.visitor;
 
 import game.carta.energia.Energia;
-import game.carta.estadio.E;
-import game.carta.objeto.O;
+import game.carta.estadio.Estadio;
+import game.carta.objeto.Objeto;
 import game.carta.pokemon.Pokemon;
 import game.carta.soporte.Soporte;
 import game.Entrenador;
@@ -14,12 +14,12 @@ public class visitCard implements Visitor{
         Trainer=e;
     }
     @Override
-    public void visitObject(O o) {
-        o.efecto();
+    public void visitObject(Objeto obj) {
+        obj.efecto();
     }
 
     @Override
-    public void visitStadium(E s) {
+    public void visitStadium(Estadio s) {
 
     }
 

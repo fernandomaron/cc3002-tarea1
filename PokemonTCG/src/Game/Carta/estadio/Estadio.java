@@ -4,7 +4,7 @@ import game.carta.ACarta;
 import game.Entrenador;
 import game.visitor.Visitor;
 
-public class E extends ACarta {
+public class Estadio extends ACarta {
 
 
     @Override

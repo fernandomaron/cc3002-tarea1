@@ -127,7 +127,7 @@ public interface Pokemon extends Carta {
     void setHabilidades(ArrayList<Habilidad> habilidades);
 
     /**
-     * This method tells the pokemon's trainer to check if this pokemon has been K.O. or not
+     * This method tells the pokemon's trainer to check if this pokemon has been K.Od. or not
      */
     void checkHP();
 

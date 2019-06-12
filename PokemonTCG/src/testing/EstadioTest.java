@@ -14,11 +14,11 @@ public class EstadioTest {
 
     @Before
     public void setUp(){
-        ChaosGym=new CG();
-        FrozenCity=new FC();
-        LuckyStadium=new LS();
-        PokemonPark=new PP();
-        TrainingCenter=new TC();
+        ChaosGym=new ChaosGym();
+        FrozenCity=new FrozenCity();
+        LuckyStadium=new LuckyStadium();
+        PokemonPark=new PokemonPark();
+        TrainingCenter=new TrainingCenter();
     }
     
 
