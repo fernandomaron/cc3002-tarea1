@@ -1,4 +1,6 @@
 package game.carta.pokemon.fire;
 
-public class Phase1FirePokemon {
+import game.carta.pokemon.Phase1;
+
+public class Phase1FirePokemon extends PokemonFuego implements Phase1{
 }

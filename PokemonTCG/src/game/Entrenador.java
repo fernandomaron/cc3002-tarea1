@@ -4,12 +4,8 @@ package game;
  * @author Fernando Maron
  */
 import game.carta.Carta;
-import game.carta.energia.Energia;
-import game.carta.estadio.Estadio;
-import game.carta.objeto.Objeto;
 import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.PokemonNull;
-import game.carta.soporte.Soporte;
 import game.habilidad.Habilidad;
 import game.visitor.Visitor;
 import game.visitor.visitCard;
@@ -22,6 +18,7 @@ public class Entrenador {
     private ArrayList<Carta> Hand;
     private ArrayList<Carta> Deck;
     private Visitor visitorC;
+    private Pokemon Objetivo;
 
     public Entrenador(){
         this(new PokemonNull(), new ArrayList<>(), new ArrayList<>());
@@ -78,4 +75,10 @@ public class Entrenador {
             }
         }
     }
+    public void setObjetivo(Pokemon p){
+        this.Objetivo=p;
+    }
+    public Pokemon getObjetivo(){return this.Objetivo;}
+
+
 }

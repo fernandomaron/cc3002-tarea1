@@ -1,4 +1,6 @@
 package game.carta.pokemon.electric;
 
-public class BasicElectricPokemon {
+import game.carta.pokemon.Basic;
+
+public class BasicElectricPokemon extends PokemonElectrico implements Basic {
 }

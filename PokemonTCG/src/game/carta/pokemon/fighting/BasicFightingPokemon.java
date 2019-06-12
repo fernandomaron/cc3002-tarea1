@@ -1,4 +1,6 @@
 package game.carta.pokemon.fighting;
 
-public class BasicFightingPokemon {
+import game.carta.pokemon.Basic;
+
+public class BasicFightingPokemon extends PokemonLucha implements Basic {
 }

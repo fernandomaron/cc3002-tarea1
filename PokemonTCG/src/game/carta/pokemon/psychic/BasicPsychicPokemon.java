@@ -1,4 +1,6 @@
 package game.carta.pokemon.psychic;
 
-public class BasicPsychicPokemon {
+import game.carta.pokemon.Basic;
+
+public class BasicPsychicPokemon extends PokemonPsiquico implements Basic {
 }

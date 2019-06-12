@@ -3,9 +3,9 @@ package game.carta.objeto;
 import game.carta.ACartaEntrenador;
 import game.visitor.Visitor;
 
-public class Objeto extends ACartaEntrenador {
-    public Objeto(){this("","");}
-    public Objeto(String name, String desc){
+public class O extends ACartaEntrenador {
+    public O(){this("","");}
+    public O(String name, String desc){
         this.setDescription(desc);
         this.setName(name);
     }
@@ -15,5 +15,9 @@ public class Objeto extends ACartaEntrenador {
         visitor.visitObject(this);
     }
 
+    public void efecto(){
+
+    }
+    public void somtin(){}
 
 }

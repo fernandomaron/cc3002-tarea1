@@ -1,4 +1,6 @@
 package game.carta.pokemon.electric;
 
-public class Phase2ElectricPokemon {
+import game.carta.pokemon.Phase2;
+
+public class Phase2ElectricPokemon extends PokemonElectrico implements Phase2{
 }

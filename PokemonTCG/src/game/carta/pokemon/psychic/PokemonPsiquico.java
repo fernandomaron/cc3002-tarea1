@@ -1,6 +1,8 @@
-package game.carta.pokemon;
+package game.carta.pokemon.psychic;
 
 import game.carta.energia.Energia;
+import game.carta.pokemon.AbstractPokemon;
+import game.carta.pokemon.Pokemon;
 import game.habilidad.Ataques.Ataque;
 import game.habilidad.Habilidad;
 
@@ -20,15 +22,16 @@ public class PokemonPsiquico extends AbstractPokemon {
         this.setID(id);
         this.setEnergias(energias);
         this.setHabilidades(habilidades);
+        this.setDMGCounter(0);
     }
 
     /**
-     * @see Pokemon#atacarCon(Ataque, Pokemon)
+     * @see Pokemon#atacarCon(Ataque)
      * @param ataque Attack the current pokemon will perform
-     * @param objetivo This pokemon's target
      */
-    public void atacarCon(Ataque ataque, Pokemon objetivo) {
-        objetivo.atacadoPorPsiquico(ataque);
+    @Override
+    public void atacarCon(Ataque ataque) {
+        this.getObjetivo().atacadoPorPsiquico(ataque);
         this.checkHP();
     }
 
@@ -38,7 +41,7 @@ public class PokemonPsiquico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPsiquico(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg()*2);
+        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg()*2);
         this.checkHP();
     }
 
@@ -48,7 +51,7 @@ public class PokemonPsiquico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPlanta(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
         this.checkHP();
     }
 
@@ -58,7 +61,7 @@ public class PokemonPsiquico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorLucha(Ataque ataque) {
-        this.setHP(this.getHP()-(Math.max(ataque.getDmg()-30,0)));
+        this.setDMGCounter(this.getDMGCounter()-(Math.max(ataque.getDmg()-30,0)));
         this.checkHP();
     }
 
@@ -68,7 +71,7 @@ public class PokemonPsiquico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorFuego(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
         this.checkHP();
     }
 
@@ -78,7 +81,7 @@ public class PokemonPsiquico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorElectrico(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
         this.checkHP();
     }
 
@@ -88,7 +91,7 @@ public class PokemonPsiquico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorAgua(Ataque ataque) {
-        this.setHP(this.getHP()-ataque.getDmg());
+        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
         this.checkHP();
     }
 }

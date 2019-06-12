@@ -1,4 +1,6 @@
-package game.carta.pokemon;
+package game.carta.pokemon.fire;
 
-public class BasicFirePokemon {
+import game.carta.pokemon.Basic;
+
+public class BasicFirePokemon extends PokemonFuego implements Basic {
 }

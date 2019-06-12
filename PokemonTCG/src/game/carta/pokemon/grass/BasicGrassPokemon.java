@@ -1,4 +1,6 @@
 package game.carta.pokemon.grass;
 
-public class BasicGrassPokemon {
+import game.carta.pokemon.Basic;
+
+public class BasicGrassPokemon extends PokemonPlanta implements Basic {
 }

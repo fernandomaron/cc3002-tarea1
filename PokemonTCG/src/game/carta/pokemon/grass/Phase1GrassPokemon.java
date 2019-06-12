@@ -1,4 +1,6 @@
 package game.carta.pokemon.grass;
 
-public class Phase1GrassPokemon {
+import game.carta.pokemon.Phase1;
+
+public class Phase1GrassPokemon extends PokemonPlanta implements Phase1 {
 }

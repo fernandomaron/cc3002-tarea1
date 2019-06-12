@@ -104,7 +104,8 @@ public abstract class AbstractPokemon extends ACarta implements Pokemon{
 
     public ArrayList<Energia> getEnergias(){return this.Energias;}
 
-    protected void setDMGCounter(int i) {
-        DMGCounter = i;
+    public void setDMGCounter(int i) {
+        this.DMGCounter = i;
+        if (this.DMGCounter<0)this.DMGCounter=0;
     }
 }
