@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for electric type pokemons
  */
-public class PokemonElectrico extends AbstractPokemon {
+public abstract class PokemonElectrico extends AbstractPokemon {
     public PokemonElectrico(){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }

@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for fire type pokemons
  */
-public class PokemonFuego extends AbstractPokemon {
+public abstract class PokemonFuego extends AbstractPokemon {
     public PokemonFuego(){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }

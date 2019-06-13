@@ -1,23 +1,17 @@
 package game.carta.objeto;
 
-import game.carta.ACartaEntrenador;
+import game.carta.CartaEntrenador;
 import game.visitor.Visitor;
 
-public class Objeto extends ACartaEntrenador {
-    public Objeto(){this("","");}
-    public Objeto(String name, String desc){
-        this.setDescription(desc);
-        this.setName(name);
+public abstract class Objeto extends CartaEntrenador {
+
+    public Objeto(String name, String desc) {
+        super(name,desc);
     }
 
     @Override
     public void accept(Visitor visitor) {
         visitor.visitObject(this);
     }
-
-    public void efecto(){
-
-    }
-    public void somtin(){}
 
 }

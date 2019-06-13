@@ -7,12 +7,8 @@ public class Potion extends Objeto {
         X=x;
     }
     @Override
-    public void efecto(){
+    public void effect(){
         getTrainer().getObjetivo().setDMGCounter(getTrainer().getObjetivo().getDMGCounter()-this.X);
     }
 
-    @Override
-    public void somtin() {
-        super.somtin();
-    }
 }

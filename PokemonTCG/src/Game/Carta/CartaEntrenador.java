@@ -1,8 +1,19 @@
 package game.carta;
 
-public abstract class ACartaEntrenador extends ACarta{
+import game.visitor.Visitor;
+
+public abstract class CartaEntrenador extends ACarta{
     private String Name;
     private String Description;
+
+    public CartaEntrenador(){
+        this("","");
+    }
+
+    public CartaEntrenador(String name, String desc) {
+        Name=name;
+        Description=desc;
+    }
 
     public String getName(){
         return this.Name;
@@ -19,4 +30,9 @@ public abstract class ACartaEntrenador extends ACarta{
     public void setDescription(String s){
         this.Description=s;
     }
+
+    public void effect(){
+
+    }
+
 }

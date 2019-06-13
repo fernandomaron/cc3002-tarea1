@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for psychic type pokemons
  */
-public class PokemonPsiquico extends AbstractPokemon {
+public abstract class PokemonPsiquico extends AbstractPokemon {
     public PokemonPsiquico() {
         this(0, 0, new ArrayList<>(), new ArrayList<>());
     }

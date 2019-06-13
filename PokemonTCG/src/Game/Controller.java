@@ -1,27 +1,52 @@
 package game;
 
-import java.util.Scanner;
+import game.carta.estadio.Estadio;
+import game.carta.pokemon.Pokemon;
+import game.visitor.VisitCard;
+import game.visitor.Visitor;
 
 public class Controller {
-    private Entrenador jugador1;
-    private Entrenador jugador2;
+    private boolean UsedStadium = false;
+    private Entrenador jugador1=new Entrenador();
+    private Entrenador jugador2=new Entrenador();
+    private Estadio currentStadium=new Estadio();
+    private Visitor visit=new VisitCard();
 
-    public Controller(Entrenador j1, Entrenador j2){
-        jugador1=j1;
-        jugador2=j2;
+    public Controller(){}
+
+    public void controlPlayers(Entrenador j1, Entrenador j2){
+        this.jugador1=j1;
+        this.jugador2=j2;
+        j1.setController(this);
+        j2.setController(this);
     }
 
-    public void Turnj1(){
-        Scanner s = new Scanner(System.in);
-        while (true){
-            System.out.println("What do you want to do? ('Check Hand', 'Check Pokemon', )");
-            String in = s.nextLine();
-            if (in.equals("q")){
-                break;
-            }
-            else if(true){
-            }
+    public void cotrolVisitor(){
+        this.visit.setCotroller(this);
+    }
 
-        }
+    public void stadiumEffect(Entrenador entrenador) {
+        this.currentStadium.efecto(entrenador);
+    }
+
+    public void setCurrentStadium(Estadio s) {
+        this.currentStadium=s;
+    }
+
+    public void chooseTargetPokemon(Entrenador entrenador, Pokemon pokemon){
+        entrenador.setObjetivo(pokemon);
+    }
+
+    public Visitor getVisitor() {
+        return this.visit;
+    }
+
+    public void setUsedStadium(boolean b) {
+        UsedStadium=b;
+    }
+
+    public boolean canEvolve(Entrenador trainer, int prevolutionid) {
+        return trainer.getObjetivo().getID()==prevolutionid;
+
     }
 }

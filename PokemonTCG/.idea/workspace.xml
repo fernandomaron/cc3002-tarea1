@@ -1,69 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="">
+    <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="potion and objeto class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Estadio/ChaosGym.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Estadio/Estadio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Estadio/FrozenCity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Estadio/LuckyStadium.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Estadio/PokemonPark.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Estadio/TrainingCenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Objeto/Objeto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Objeto/Potion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Soporte/Ghetsis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Soporte/Iris.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Soporte/N.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Soporte/NinjaBoy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/Soporte/ProfElm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/AfterImageAssault.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/ElectricShock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/FireSpin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/HydroPump.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/Meditate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/Buzzap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/DamageSwap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/EnergyBurn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/EnergyTrans.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/Heal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/RainDance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/Shift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/StrikesBack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/WingBuzz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Visitor/visitCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Carta/ACartaEntrenador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Carta/estadio/Estadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/estadio/Estadio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Carta/objeto/Objeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/objeto/Objeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Carta/objeto/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/objeto/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Entrenador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/ACarta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/ACarta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/objeto/Objeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/objeto/Objeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/objeto/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/objeto/Potion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/electric/BasicElectricPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/electric/BasicElectricPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase1ElectricPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase1ElectricPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase2ElectricPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase2ElectricPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/CartaEntrenador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/energia/Energia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/energia/Energia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/Phase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/Phase1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/BasicFightingPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/BasicFightingPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase1FightingPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase1FightingPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase2FightingPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase2FightingPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/PokemonLucha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fighting/PokemonLucha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fire/BasicFirePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fire/BasicFirePokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fire/Phase1FirePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fire/Phase1FirePokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fire/Phase2FirePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fire/Phase2FirePokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/fire/PokemonFuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/fire/PokemonFuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/grass/BasicGrassPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/grass/BasicGrassPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/grass/Phase1GrassPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/grass/Phase1GrassPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/grass/Phase2GrassPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/grass/Phase2GrassPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/grass/PokemonPlanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/grass/PokemonPlanta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/BasicPsychicPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/BasicPsychicPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/Phase1PsychicPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/Phase1PsychicPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/Phase2PsychicPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/Phase2PsychicPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/PokemonPsiquico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/psychic/PokemonPsiquico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/water/BasicWaterPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/water/BasicWaterPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase2WaterPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase2WaterPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/habilidad/Special/Special.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/habilidad/Special/Special.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/visitor/visitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/visitor/visitCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/soporte/ProfJuniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/soporte/ProfJuniper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/carta/soporte/Soporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/soporte/Soporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/visitor/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/visitor/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/visitor/visitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/visitor/VisitCard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,14 +89,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10523" />
+          <entry key="dummy" value="129" />
+          <entry key="java" value="13372" />
           <entry key="txt" value="326" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10523" />
-          <entry key="PLAIN_TEXT" value="326" />
+          <entry key="JAVA" value="13372" />
+          <entry key="PLAIN_TEXT" value="455" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -140,14 +106,14 @@
           <entry key="JAVA/Game" value="1" />
           <entry key="JavaScript-modules-diagram/C:/Users/Fernando/Desktop/Metodología/2019_1/Tareas/cc3002-tarea1-2019-01/PokemonTCG/src/Game" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="251" />
+          <entry key="java" value="298" />
           <entry key="uml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="251" />
+          <entry key="JAVA" value="298" />
           <entry key="UML" value="5" />
         </counts>
       </usages-collector>
@@ -156,10 +122,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/objeto/Objeto.java">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="168">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-84">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/visitor/Visitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="75" column="64" lean-forward="true" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-399">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,91 +191,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
-              <folding>
-                <element signature="e#2127#2128#0" expanded="true" />
-                <element signature="e#2146#2147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/visitor/visitCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/objeto/Potion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="98" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="1245">
+              <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
+                <element signature="e#3531#3532#0" expanded="true" />
+                <element signature="e#3561#3562#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/Controlador.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Phase1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
+            <state relative-caret-position="105">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Basic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="42">
+              <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/ACarta.java">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1806">
-              <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/habilidad/Special/Heal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            <state relative-caret-position="42">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -276,11 +248,13 @@
       <find>ataque</find>
       <find>setHP</find>
       <find>getHP</find>
+      <find>Trainer</find>
     </findStrings>
     <replaceStrings>
       <replace>Tackle</replace>
       <replace>setDMGCounter</replace>
       <replace>getDMGCounter</replace>
+      <replace>p.getTrainer()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -289,24 +263,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/carta/estadio/PokemonPark.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/estadio/TrainingCenter.java" />
-        <option value="$PROJECT_DIR$/src/testing/EstadioTest.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/estadio/ACarta.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/Carta.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/estadio/Estadio.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/ACarta.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonPlanta.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonPsiquico.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonNull.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonLucha.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonFuego.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonElectrico.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/PokemonAgua.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase2ElectricPokemon.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase1ElectricPokemon.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/electric/BasicElectricPokemon.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/fighting/BasicFightingPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase1FightingPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase2FightingPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/fire/Phase1FirePokemon.java" />
@@ -321,25 +277,43 @@
         <option value="$PROJECT_DIR$/src/game/habilidad/Habilidad.java" />
         <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/AfterImageAssault.java" />
         <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/HydroPump.java" />
-        <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java" />
-        <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java" />
         <option value="$PROJECT_DIR$/src/game/habilidad/Special/Special.java" />
+        <option value="$PROJECT_DIR$/src/game/habilidad/Special/Heal.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/objeto/ACartaEntrenador.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" />
+        <option value="$PROJECT_DIR$/src/game/Controlador.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/objeto/P.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/Pokemon.java" />
+        <option value="$PROJECT_DIR$/src/game/visitor/visitCard.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/ACarta.java" />
+        <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java" />
+        <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/soporte/ProfJuniper.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/CartaEntrenador.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/energia/Energia.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/objeto/Potion.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/objeto/Objeto.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/soporte/Soporte.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/estadio/LuckyStadium.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/estadio/Estadio.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/psychic/PokemonPsiquico.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/grass/PokemonPlanta.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/fire/PokemonFuego.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/fighting/PokemonLucha.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java" />
-        <option value="$PROJECT_DIR$/src/game/habilidad/Special/Heal.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/objeto/ACartaEntrenador.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/BasicWaterPokemon.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase2WaterPokemon.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/Basic.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java" />
+        <option value="$PROJECT_DIR$/src/game/visitor/Visitor.java" />
+        <option value="$PROJECT_DIR$/src/game/Controller.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/Phase1.java" />
+        <option value="$PROJECT_DIR$/src/game/visitor/VisitCard.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/Entrenador.java" />
-        <option value="$PROJECT_DIR$/src/game/visitor/visitCard.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/objeto/Potion.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/objeto/Objeto.java" />
-        <option value="$PROJECT_DIR$/src/game/Controlador.java" />
       </list>
     </option>
   </component>
@@ -412,13 +386,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="carta" type="462c0819:PsiDirectoryNode" />
-              <item name="objeto" type="462c0819:PsiDirectoryNode" />
+              <item name="pokemon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
               <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="carta" type="462c0819:PsiDirectoryNode" />
+              <item name="pokemon" type="462c0819:PsiDirectoryNode" />
+              <item name="water" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -434,7 +418,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560354633467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560387241991" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -455,8 +439,8 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="game.carta.objeto" />
       <recent name="game.carta.estadio" />
+      <recent name="game.carta.objeto" />
       <recent name="Game.Carta.Soporte" />
     </key>
   </component>
@@ -568,7 +552,7 @@
       <workItem from="1559761709606" duration="2263000" />
       <workItem from="1559937844832" duration="3919000" />
       <workItem from="1560194191526" duration="10560000" />
-      <workItem from="1560220126331" duration="3528000" />
+      <workItem from="1560220126331" duration="23379000" />
     </task>
     <task id="LOCAL-00001" summary="Test de ataques entre pokemones por tipo">
       <created>1556419327360</created>
@@ -648,10 +632,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81869000" />
+    <option name="totallyTimeSpent" value="101720000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -659,14 +643,14 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.27315435" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.27248323" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5013423" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32907802" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -681,7 +665,7 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.24966443" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -689,14 +673,14 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24765101" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.27248323" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5013423" side_tool="true" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4986577" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -711,7 +695,7 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.24966443" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,7 +720,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/Controlador.java</url>
+          <url>file://$PROJECT_DIR$/src/game/Controller.java</url>
           <line>16</line>
           <properties />
           <option name="timeStamp" value="1" />
@@ -745,127 +729,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/testing/EntrenadorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/Estadio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/EstadioTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/EnergiaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/PokemonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/Carta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/PokemonNull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Phase1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/BasicWaterPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/Phase2WaterPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase2ElectricPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/Phase1ElectricPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/BasicElectricPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="75" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fighting/BasicFightingPokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fighting/Phase1FightingPokemon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -950,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Basic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/AfterImageAssault.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -984,27 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/habilidad/Special/Special.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1019,55 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="157" column="24" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
-          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/psychic/PokemonPsiquico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/grass/PokemonPlanta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fire/PokemonFuego.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1743">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fighting/PokemonLucha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1806">
-          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/habilidad/Special/Heal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1075,73 +861,293 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/ACartaEntrenador.java">
+    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/ChaosGym.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="129" column="85" selection-start-line="129" selection-start-column="85" selection-end-line="129" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/ACarta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
+    <entry file="file://$PROJECT_DIR$/src/game/carta/Carta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="e#2127#2128#0" expanded="true" />
-            <element signature="e#2146#2147#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="149">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/visitor/visitCard.java">
+    <entry file="file://$PROJECT_DIR$/src/game/carta/energia/EnergiaElectrico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java">
+    <entry file="file://$PROJECT_DIR$/src/game/carta/energia/Energia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/energia/EnergiaAgua.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/CartaEntrenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/objeto/Potion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="98" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
+        <state relative-caret-position="105">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/objeto/Objeto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="168">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/soporte/ProfJuniper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/soporte/Soporte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/LuckyStadium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/Estadio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/psychic/PokemonPsiquico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/grass/PokemonPlanta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fire/PokemonFuego.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fighting/PokemonLucha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/BasicWaterPokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Controlador.java">
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/Phase2WaterPokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Basic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Phase1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/Visitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
+          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="152" column="24" selection-start-line="152" selection-start-column="24" selection-end-line="152" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+            <element signature="e#3561#3562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="75" column="64" lean-forward="true" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
         </state>
       </provider>
     </entry>
