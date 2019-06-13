@@ -32,7 +32,7 @@ public class Ataque implements Habilidad {
     @Override
     public void ejecutar(Pokemon usuario) {
         if(usuario.hasEnergy(this.getCosto())) {
-            this.efecto(usuario);
+            this.attack(usuario);
         }
         else {
             System.out.println("No se tienen suficientes energías");
@@ -41,7 +41,15 @@ public class Ataque implements Habilidad {
 
     @Override
     public void efecto(Pokemon usuario) {
-        usuario.atacarCon(this);
+
+    }
+
+    public void attack(Pokemon usuario) {
+        if(usuario.equals(usuario.getTrainer().getActive())) {
+            usuario.atacarCon(this);
+            this.efecto(usuario);
+        }
+
     }
 
     public int getDmg(){

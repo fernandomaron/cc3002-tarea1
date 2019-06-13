@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for fighting type pokemons
  */
-public class PokemonLucha extends AbstractPokemon {
+public abstract class PokemonLucha extends AbstractPokemon {
     public PokemonLucha(){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }

@@ -22,7 +22,7 @@ public abstract class Energia implements Carta {
     }
 
     @Override
-    public boolean equals(Object energia){
-        return this.equals(energia);
+    public Entrenador getTrainer() {
+        return Trainer;
     }
 }

@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for water type pokemons
  */
-public class PokemonAgua extends AbstractPokemon {
+public abstract class PokemonAgua extends AbstractPokemon {
     public PokemonAgua (){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }

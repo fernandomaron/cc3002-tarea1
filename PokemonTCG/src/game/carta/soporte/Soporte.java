@@ -1,17 +1,16 @@
 package game.carta.soporte;
 
-import game.carta.Carta;
-import game.Entrenador;
+import game.carta.CartaEntrenador;
 import game.visitor.Visitor;
 
-public class Soporte implements Carta {
+public class Soporte extends CartaEntrenador {
+
+    public Soporte(String name, String desc){
+        super(name, desc);
+    }
     @Override
     public void accept(Visitor visitor) {
         visitor.visitSupport(this);
     }
 
-    @Override
-    public void setTrainer(Entrenador entrenador) {
-
-    }
 }

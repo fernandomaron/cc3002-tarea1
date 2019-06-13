@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for grass type pokemons
  */
-public class PokemonPlanta extends AbstractPokemon {
+public abstract class PokemonPlanta extends AbstractPokemon {
     public PokemonPlanta(){
         this(0,0,new ArrayList<>(), new ArrayList<>());
     }

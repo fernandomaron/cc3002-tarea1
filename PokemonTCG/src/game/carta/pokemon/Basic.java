@@ -1,4 +1,4 @@
 package game.carta.pokemon;
 
-public interface Basic {
+public interface Basic extends Pokemon {
 }

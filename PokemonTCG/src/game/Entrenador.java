@@ -4,40 +4,57 @@ package game;
  * @author Fernando Maron
  */
 import game.carta.Carta;
+import game.carta.pokemon.Basic;
 import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.PokemonNull;
+import game.carta.pokemon.water.Phase1WaterPokemon;
 import game.habilidad.Habilidad;
 import game.visitor.Visitor;
-import game.visitor.visitCard;
+import game.visitor.VisitCard;
 
 import java.util.ArrayList;
 
 public class Entrenador {
+    private Controller Controller = new Controller();
     private Pokemon Active;
     private ArrayList<Pokemon> Bench;
-    private ArrayList<Carta> Hand;
+    private ArrayList<Carta> Hand=new ArrayList<>();
     private ArrayList<Carta> Deck;
-    private Visitor visitorC;
     private Pokemon Objetivo;
+    private int objID;
+    private ArrayList<Carta> Discard=new ArrayList<>();
+    private ArrayList<Carta> Prize=new ArrayList<>();
+    private int UsedCard= -1;
 
     public Entrenador(){
         this(new PokemonNull(), new ArrayList<>(), new ArrayList<>());
     }
-    public Entrenador(Pokemon activo,ArrayList<Pokemon> banca,ArrayList<Carta> mano){
+    public Entrenador(Pokemon activo,ArrayList<Pokemon> banca,ArrayList<Carta> deck){
         Active =activo;
         Bench =banca;
-        Hand =mano;
-        visitorC=new visitCard(this);
+        Deck =deck;
     }
 
-    public ArrayList<Habilidad> habilidadesActivo(){return Active.getHabilidades();}
-    public void usarHabilidad(int index, Pokemon objetivo){
-        Active.usar(Active.getHabilidades().get(index), objetivo);
+    public ArrayList<Habilidad> habilidadesPokemon(int index){
+        ArrayList<Pokemon> possible = new ArrayList<>();
+        possible.addAll(Bench);
+        possible.add(0,Active);
+        return possible.get(index).getHabilidades();
+    }
+    public void usarHabilidad(int pokemon,int index, Pokemon objetivo){
+        ArrayList<Pokemon> possible=new ArrayList<>();
+        possible.addAll(Bench);
+        possible.add(0,Active);
+        possible.get(pokemon).usar(possible.get(pokemon).getHabilidades().get(index), objetivo);
     }
     public void jugarCarta(int index) {
+        UsedCard=index;
         Hand.get(index).setTrainer(this);
-        Hand.get(index).accept(visitorC);
-        Hand.remove(index);
+        Hand.get(index).accept(this.getControl().getVisitor());
+    }
+
+    private Controller getControl() {
+        return this.Controller;
     }
 
     public void setActive(Pokemon pokemon){
@@ -77,8 +94,69 @@ public class Entrenador {
     }
     public void setObjetivo(Pokemon p){
         this.Objetivo=p;
+        ArrayList<Pokemon> possible=new ArrayList<>();
+        possible.addAll(Bench);
+        possible.add(0,Active);
+        int index=possible.indexOf(p);
+        objID=index;
+
     }
     public Pokemon getObjetivo(){return this.Objetivo;}
 
 
+    public void setController(Controller controller) {
+        this.Controller=controller;
+    }
+
+    public void useStadium(){
+        this.Controller.stadiumEffect(this);
+    }
+    public void drawCards(int n){
+        for(int i=0;i<n;i++){
+            addToMano(Deck.get(0));
+            Deck.remove(0);
+        }
+    }
+
+    public void addPrize(Carta carta){
+        Prize.add(carta);
+    }
+
+    public ArrayList<Carta> getDeck(){
+        return Deck;
+    }
+
+    public ArrayList<Carta> getDiscard(){
+        return Discard;
+    }
+
+    public ArrayList<Carta> getPrize(){
+        return Prize;
+    }
+
+    public void drawPrize(int index){
+        Hand.add(Prize.get(index));
+        Prize.remove(index);
+    }
+
+    public Controller getController() {
+        return Controller;
+    }
+    public int getUsedCard(){
+        return UsedCard;
+    }
+
+    public int getObjID() {return objID;
+    }
+
+    public void Evolve(Pokemon pokemon) {
+        if (objID==0){
+            Discard.add(0, Active);
+            Active=pokemon;
+        }
+        else {
+            Discard.add(0,Bench.get(objID-1));
+            Bench.set(objID - 1, pokemon);
+        }
+    }
 }

@@ -1,4 +1,6 @@
 package game.carta.pokemon.water;
 
-public class Phase2WaterPokemon {
+import game.carta.pokemon.Phase2;
+
+public class Phase2WaterPokemon extends PokemonAgua implements Phase2 {
 }

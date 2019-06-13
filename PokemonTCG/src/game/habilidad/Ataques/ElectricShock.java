@@ -15,10 +15,9 @@ public class ElectricShock extends Ataque{
 
     @Override
     public void efecto(Pokemon usuario) {
-        super.efecto(usuario);
         double i=Math.random();
         if (i<0.5){
-            usuario.setHP(usuario.getHP()-X);
+            usuario.setDMGCounter(usuario.getDMGCounter()+X);
         }
     }
 }
