@@ -18,7 +18,7 @@ public class Phase1WaterPokemon extends PokemonAgua implements Phase1 {
     }
 
     @Override
-    public void evolve2p1(Pokemon obj) {
+    public void evolve2P1(Pokemon obj) {
         setEnergias(obj.getEnergias());
         obj.setEnergias(new ArrayList<>());
         getTrainer().Evolve(this);

@@ -124,4 +124,24 @@ public class PokemonNull implements Pokemon {
     public void setEnergias(ArrayList<Energia> energias) {
 
     }
+
+    @Override
+    public Pokemon getObjetivo() {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Energia> getEnergias() {
+        return null;
+    }
+
+    @Override
+    public void setDMGCounter(int i) {
+
+    }
+
+    @Override
+    public int getDMGCounter() {
+        return 0;
+    }
 }

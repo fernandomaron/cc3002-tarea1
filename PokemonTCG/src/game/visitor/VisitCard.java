@@ -5,6 +5,7 @@ import game.carta.energia.Energia;
 import game.carta.estadio.Estadio;
 import game.carta.objeto.Objeto;
 import game.carta.pokemon.Phase1;
+import game.carta.pokemon.Phase2;
 import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.water.Phase1WaterPokemon;
 import game.carta.soporte.Soporte;
@@ -73,8 +74,16 @@ public class VisitCard implements Visitor{
     @Override
     public void visitP1Pokemon(Phase1 phase1) {
         if(Control.canEvolve(phase1.getTrainer(), phase1.getPreEvID())){
-            phase1.evolve2p1(phase1.getTrainer().getObjetivo());
+            phase1.evolve2P1(phase1.getTrainer().getObjetivo());
             DiscardCard(phase1.getTrainer());
+        }
+    }
+
+    @Override
+    public void visitP2Pokemon(Phase2 phase2) {
+        if(Control.canEvolve(phase2.getTrainer(), phase2.getPreEvID())){
+            phase2.evolve2P2(phase2.getTrainer().getObjetivo());
+            DiscardCard(phase2.getTrainer());
         }
     }
 

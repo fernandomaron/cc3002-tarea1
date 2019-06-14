@@ -7,10 +7,8 @@ import game.carta.Carta;
 import game.carta.pokemon.Basic;
 import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.PokemonNull;
-import game.carta.pokemon.water.Phase1WaterPokemon;
 import game.habilidad.Habilidad;
-import game.visitor.Visitor;
-import game.visitor.VisitCard;
+
 
 import java.util.ArrayList;
 
@@ -35,17 +33,11 @@ public class Entrenador {
         Deck =deck;
     }
 
-    public ArrayList<Habilidad> habilidadesPokemon(int index){
-        ArrayList<Pokemon> possible = new ArrayList<>();
-        possible.addAll(Bench);
-        possible.add(0,Active);
-        return possible.get(index).getHabilidades();
+    public ArrayList<Habilidad> habilidadesPokemon(){
+        return Active.getHabilidades();
     }
-    public void usarHabilidad(int pokemon,int index, Pokemon objetivo){
-        ArrayList<Pokemon> possible=new ArrayList<>();
-        possible.addAll(Bench);
-        possible.add(0,Active);
-        possible.get(pokemon).usar(possible.get(pokemon).getHabilidades().get(index), objetivo);
+    public void usarHabilidad(int index, Pokemon objetivo){
+        Active.usar(Active.getHabilidades().get(index), objetivo);
     }
     public void jugarCarta(int index) {
         UsedCard=index;
