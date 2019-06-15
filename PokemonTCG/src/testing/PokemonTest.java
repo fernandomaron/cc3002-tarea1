@@ -5,8 +5,10 @@ import game.carta.energia.EnergiaAgua;
 import game.carta.energia.EnergiaElectrico;
 import game.carta.energia.EnergiaFuego;
 import game.carta.pokemon.*;
+import game.carta.pokemon.electric.BasicElectricPokemon;
 import game.carta.pokemon.electric.PokemonElectrico;
 import game.carta.pokemon.grass.PokemonPlanta;
+import game.carta.pokemon.psychic.BasicPsychicPokemon;
 import game.carta.pokemon.psychic.PokemonPsiquico;
 import game.habilidad.Ataques.Ataque;
 import game.habilidad.Habilidad;
@@ -43,8 +45,8 @@ public class PokemonTest {
         Abilities=new ArrayList<>();
         Abilities.add(Tackle);
         Abilities.add(Thunderbolt);
-        Magnemite= new PokemonElectrico(40, 81, new ArrayList<>(),Abilities);
-        Beldum= new PokemonPsiquico(100, 374, new ArrayList<>(), new ArrayList<>());
+        Magnemite= new BasicElectricPokemon(40, 81, new ArrayList<>(),Abilities);
+        Beldum= new BasicPsychicPokemon(100, 374, new ArrayList<>(), new ArrayList<>());
         Beldum.setTrainer(Red);
         Magnemite.setTrainer(Red);
     }
@@ -70,11 +72,11 @@ public class PokemonTest {
         Magnemite.agregarEnergia(new EnergiaElectrico());
         Magnemite.agregarEnergia(new EnergiaElectrico());
         Magnemite.agregarEnergia(new EnergiaFuego());
-        assertEquals(100, Beldum.getHP());
+        assertEquals(0, Beldum.getDMGCounter());
         Magnemite.usar(Magnemite.getHabilidades().get(0),Beldum);
-        assertEquals(90, Beldum.getHP());
+        assertEquals(10, Beldum.getDMGCounter());
         Magnemite.usar(Magnemite.getHabilidades().get(1),Beldum);
-        assertEquals(70, Beldum.getHP());
+        assertEquals(30, Beldum.getDMGCounter());
     }
 
     @Test
@@ -105,39 +107,4 @@ public class PokemonTest {
         assertEquals(Ash,Magnemite.getTrainer());
     }
 
-    @Test
-    public void jugarPokemon(){
-        assertTrue(Red.getActive().isNull());
-        assertTrue(Red.getBench().isEmpty());
-        Beldum.jugar();
-        assertFalse(Red.getActive().isNull());
-        assertTrue(Red.getBench().isEmpty());
-        ArrayList<Pokemon> Banca= new ArrayList<>();
-        Banca.add(new PokemonElectrico());
-        Banca.add(new PokemonElectrico());
-        Banca.add(new PokemonElectrico());
-        Banca.add(new PokemonElectrico());
-        Red.setBench((ArrayList<Pokemon>) Banca.clone());
-        assertFalse(Red.getBench().isEmpty());
-        assertTrue(Red.getBench().size()<5);
-        Pokemon Bulbasaur = new PokemonPlanta();
-        Bulbasaur.setTrainer(Red);
-        Bulbasaur.jugar();
-        assertNotEquals(Banca,Red.getBench());
-        Banca=Red.getBench();
-        Pokemon Pikachu=new PokemonElectrico();
-        Pikachu.setTrainer(Red);
-        Pikachu.jugar();
-        assertEquals(Banca,Red.getBench());
-
-        Red.setActive(new PokemonNull());
-        assertTrue(Red.getActive().isNull());
-        Banca= new ArrayList<>();
-        Banca.add(Magnemite);
-        Red.setBench(Banca);
-        assertFalse(Red.getBench().isEmpty());
-        Beldum.jugar();
-        assertEquals(Magnemite,Red.getActive());
-        assertEquals(Beldum,Red.getBench().get(0));
-    }
 }

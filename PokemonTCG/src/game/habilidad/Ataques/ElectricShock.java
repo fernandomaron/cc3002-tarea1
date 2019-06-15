@@ -1,5 +1,6 @@
 package game.habilidad.Ataques;
 
+import game.CoinFlip;
 import game.carta.energia.Energia;
 import game.carta.pokemon.Pokemon;
 
@@ -14,9 +15,8 @@ public class ElectricShock extends Ataque{
     }
 
     @Override
-    public void efecto(Pokemon usuario) {
-        double i=Math.random();
-        if (i<0.5){
+    public void efecto(Pokemon usuario, Boolean b) {
+        if (!b){
             usuario.setDMGCounter(usuario.getDMGCounter()+X);
         }
     }

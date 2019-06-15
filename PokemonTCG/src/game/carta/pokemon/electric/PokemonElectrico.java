@@ -42,8 +42,8 @@ public abstract class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPsiquico(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 
     /**
@@ -52,8 +52,8 @@ public abstract class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPlanta(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 
     /**
@@ -62,8 +62,8 @@ public abstract class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorLucha(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg()*2);
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg()*2);
+
     }
 
     /**
@@ -72,8 +72,8 @@ public abstract class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorFuego(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 
     /**
@@ -82,8 +82,8 @@ public abstract class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorElectrico(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 
     /**
@@ -92,7 +92,7 @@ public abstract class PokemonElectrico extends AbstractPokemon {
      */
     @Override
     public void atacadoPorAgua(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 }

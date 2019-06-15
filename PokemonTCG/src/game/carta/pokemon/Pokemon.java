@@ -36,7 +36,6 @@ public interface Pokemon extends Carta {
      * This method tells the pokemon that will be attacked, with which attack and depending of which subclass
      * of pokemon, i.e. type, the method that should be called by the targeted pokemon.
      * @param ataque the attack that the pokemon will perform
-     * @param objetivo the pokemon that will receive said attack
      */
     void atacarCon(Ataque ataque);
 
@@ -84,7 +83,7 @@ public interface Pokemon extends Carta {
 
     /**
      * This method allows to see which abilities the current pokemon has
-     * @return
+     * @return An an array with the abilities of the selected pokemon
      */
     ArrayList<Habilidad> getHabilidades();
 
@@ -127,11 +126,6 @@ public interface Pokemon extends Carta {
     void setHabilidades(ArrayList<Habilidad> habilidades);
 
     /**
-     * This method tells the pokemon's trainer to check if this pokemon has been K.Od. or not
-     */
-    void checkHP();
-
-    /**
      * Method that allows to set the trainer of the current pokemon
      * @param entrenador the trainer that owns the current pokemon
      */
@@ -156,4 +150,14 @@ public interface Pokemon extends Carta {
     void setDMGCounter(int i);
 
     int getDMGCounter();
+
+    boolean isBasic();
+
+    boolean isPhase1();
+
+    boolean isPhase2();
+
+    void evolve(Pokemon obj);
+
+    int getPreEvID();
 }

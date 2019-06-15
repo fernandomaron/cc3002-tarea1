@@ -20,10 +20,7 @@ public abstract class AbstractPokemon extends ACarta implements Pokemon{
     private Entrenador Trainer = super.getTrainer();
     private Pokemon objetivo=null;
     private int DMGCounter;
-
-    public void accept(Visitor visitor){
-        visitor.visitPokemon(this);
-    }
+    private int PreEvID;
 
     public int getHP() {
         return HP;
@@ -50,7 +47,7 @@ public abstract class AbstractPokemon extends ACarta implements Pokemon{
     }
 
     public boolean hasEnergy(ArrayList<Energia> costo){
-        ArrayList<Energia> check = (ArrayList<Energia>) Energias.clone();
+        ArrayList<Energia> check = new ArrayList<>(Energias);
         int c;
         for (Energia aCosto : costo) {
             c = 0;
@@ -85,17 +82,13 @@ public abstract class AbstractPokemon extends ACarta implements Pokemon{
     }
 
     public void usar(Habilidad habilidad, Pokemon objetivo) {
-        habilidad.ejecutar(this);
         this.objetivo=objetivo;
+        habilidad.ejecutar(this);
     }
 
     @Override
     public boolean isNull() {
         return false;
-    }
-
-    public void checkHP(){
-            Trainer.checkActivo();
     }
 
     public Pokemon getObjetivo(){return this.objetivo;}
@@ -107,5 +100,30 @@ public abstract class AbstractPokemon extends ACarta implements Pokemon{
     public void setDMGCounter(int i) {
         this.DMGCounter = i;
         if (this.DMGCounter<0)this.DMGCounter=0;
+    }
+
+    @Override
+    public boolean isBasic(){return false;}
+
+    @Override
+    public boolean isPhase1(){return false;}
+
+    @Override
+    public boolean isPhase2(){return false;}
+
+    @Override
+    public void evolve(Pokemon obj) {
+        setEnergias(obj.getEnergias());
+        obj.setEnergias(new ArrayList<>());
+        getTrainer().Evolve(this);
+    }
+
+    @Override
+    public int getPreEvID(){
+        return PreEvID;
+    }
+
+    public void setPreEvID(int preEvID) {
+        PreEvID = preEvID;
     }
 }

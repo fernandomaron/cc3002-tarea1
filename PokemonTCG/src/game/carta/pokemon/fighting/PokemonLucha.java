@@ -33,7 +33,6 @@ public abstract class PokemonLucha extends AbstractPokemon {
     @Override
     public void atacarCon(Ataque ataque) {
         this.getObjetivo().atacadoPorLucha(ataque);
-        this.checkHP();
     }
 
     /**
@@ -42,8 +41,7 @@ public abstract class PokemonLucha extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPsiquico(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg()*2);
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg()*2);
     }
 
     /**
@@ -52,8 +50,7 @@ public abstract class PokemonLucha extends AbstractPokemon {
      */
     @Override
     public void atacadoPorPlanta(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg()*2);
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg()*2);
     }
 
     /**
@@ -62,8 +59,7 @@ public abstract class PokemonLucha extends AbstractPokemon {
      */
     @Override
     public void atacadoPorLucha(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
     }
 
     /**
@@ -72,8 +68,7 @@ public abstract class PokemonLucha extends AbstractPokemon {
      */
     @Override
     public void atacadoPorFuego(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
     }
 
     /**
@@ -82,8 +77,8 @@ public abstract class PokemonLucha extends AbstractPokemon {
      */
     @Override
     public void atacadoPorElectrico(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 
     /**
@@ -92,7 +87,7 @@ public abstract class PokemonLucha extends AbstractPokemon {
      */
     @Override
     public void atacadoPorAgua(Ataque ataque) {
-        this.setDMGCounter(this.getDMGCounter()-ataque.getDmg());
-        this.checkHP();
+        this.setDMGCounter(this.getDMGCounter()+ataque.getDmg());
+
     }
 }

@@ -4,9 +4,13 @@ import game.carta.*;
 import game.carta.energia.Energia;
 import game.carta.energia.EnergiaElectrico;
 import game.carta.pokemon.*;
+import game.carta.pokemon.electric.BasicElectricPokemon;
 import game.carta.pokemon.electric.PokemonElectrico;
+import game.carta.pokemon.fighting.BasicFightingPokemon;
 import game.carta.pokemon.fighting.PokemonLucha;
+import game.carta.pokemon.psychic.BasicPsychicPokemon;
 import game.carta.pokemon.psychic.PokemonPsiquico;
+import game.carta.pokemon.water.BasicWaterPokemon;
 import game.carta.pokemon.water.PokemonAgua;
 import game.habilidad.Ataques.Ataque;
 import game.habilidad.Habilidad;
@@ -45,49 +49,17 @@ public class EntrenadorTest {
         Abilities1.add(Thunderbolt);
         Abilities2=new ArrayList<>();
         Abilities2.add(Tackle);
-        Magnemite= new PokemonElectrico(40, 81, new ArrayList<>(),Abilities1);
-        Makuhita= new PokemonLucha(40, 296, new ArrayList<>(), Abilities2);
-        Totodile= new PokemonAgua(40, 158, new ArrayList<>(), new ArrayList<>());
-        Beldum= new PokemonPsiquico(40, 374, new ArrayList<>(), new ArrayList<>());
+        Magnemite= new BasicElectricPokemon(40, 81, new ArrayList<>(),Abilities1);
+        Makuhita= new BasicFightingPokemon(40, 296, new ArrayList<>(), Abilities2);
+        Totodile= new BasicWaterPokemon(40, 158, new ArrayList<>(), new ArrayList<>());
+        Beldum= new BasicPsychicPokemon(40, 374, new ArrayList<>(), new ArrayList<>());
         Mano= new ArrayList<>();
         Mano.add(Magnemite);
         Mano.add(new EnergiaElectrico());
-        Red=new Entrenador(new PokemonNull(),new ArrayList<>(), Mano);
+        Red=new Entrenador(Mano);
     }
 
-    @Test
-    public void firstCards(){
-        assertFalse(Red.getHand().isEmpty());
-        assertTrue(Red.getActive().isNull());
-        Red.jugarCarta(0);
-        assertFalse(Red.getHand().isEmpty());
-        assertFalse(Red.getActive().isNull());
-        assertEquals(40, Beldum.getHP());
 
-        assertEquals(Abilities1,Red.habilidadesActivo());
-        Red.usarHabilidad(0,Beldum);
-        assertEquals(40, Beldum.getHP());
-        Red.jugarCarta(0);
-        assertTrue(Red.getHand().isEmpty());
-        Red.usarHabilidad(0,Beldum);
-        assertEquals(30, Beldum.getHP());
-
-        assertTrue(Red.getBench().isEmpty());
-        Totodile.setTrainer(Red);
-        Totodile.jugar();
-        assertFalse(Red.getBench().isEmpty());
-        Energia ele=new EnergiaElectrico();
-        ele.setTrainer(Red);
-        ele.jugar();
-        Red.usarHabilidad(1,Beldum);
-        assertEquals(10,Beldum.getHP());
-
-        Makuhita.agregarEnergia(new EnergiaElectrico());
-        Makuhita.agregarEnergia(new EnergiaElectrico());
-        Makuhita.atacarCon(Thunderbolt,Magnemite); //Si, Makuhita genera tanta friccion con sus puños que tira un rayo ;)
-        assertEquals(Totodile,Red.getActive());
-        assertTrue(Red.getBench().isEmpty());
-    }
 
     @Test
     public void addToMano(){

@@ -21,5 +21,5 @@ public class Estadio extends CartaEntrenador {
         visitor.visitStadium(this);
     }
 
-    public void efecto(Entrenador entrenador){}
+    public void efecto(Entrenador entrenador, Boolean b){}
 }

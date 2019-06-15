@@ -100,14 +100,10 @@ public class PokemonNull implements Pokemon {
 
     }
 
-    @Override
-    public void checkHP() {
-
-    }
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.visitPokemon(this);
+
     }
 
     @Override
@@ -142,6 +138,31 @@ public class PokemonNull implements Pokemon {
 
     @Override
     public int getDMGCounter() {
+        return 0;
+    }
+
+    @Override
+    public boolean isBasic() {
+        return false;
+    }
+
+    @Override
+    public boolean isPhase1() {
+        return false;
+    }
+
+    @Override
+    public boolean isPhase2() {
+        return false;
+    }
+
+    @Override
+    public void evolve(Pokemon obj) {
+
+    }
+
+    @Override
+    public int getPreEvID() {
         return 0;
     }
 }

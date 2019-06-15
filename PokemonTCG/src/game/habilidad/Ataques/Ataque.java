@@ -1,9 +1,12 @@
 package game.habilidad.Ataques;
 
+import game.CoinFlip;
 import game.Entrenador;
 import game.carta.energia.Energia;
 import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
+import game.habilidad.OHabilidad;
+import javafx.beans.InvalidationListener;
 
 import java.util.ArrayList;
 
@@ -11,7 +14,7 @@ import java.util.ArrayList;
  * @author Fernando Maron
  * Class for abilities that perform an attack
  */
-public class Ataque implements Habilidad {
+public class Ataque extends Habilidad {
     private int Dmg;
     private String Nombre;
     private String Descripcion;
@@ -40,15 +43,14 @@ public class Ataque implements Habilidad {
     }
 
     @Override
-    public void efecto(Pokemon usuario) {
+    public void efecto(Pokemon usuario, Boolean b) {
 
     }
 
     public void attack(Pokemon usuario) {
-        if(usuario.equals(usuario.getTrainer().getActive())) {
-            usuario.atacarCon(this);
-            this.efecto(usuario);
-        }
+        usuario.atacarCon(this);
+        this.efecto(usuario, CoinFlip.Flip());
+        notifyObservers();
 
     }
 
@@ -61,4 +63,6 @@ public class Ataque implements Habilidad {
     public String getDescripcion(){return Descripcion;}
 
     public ArrayList<Energia> getCosto(){return Costo;}
+
+
 }

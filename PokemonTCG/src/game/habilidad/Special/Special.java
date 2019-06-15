@@ -1,9 +1,12 @@
 package game.habilidad.Special;
 
+import game.CoinFlip;
 import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
+import game.habilidad.OHabilidad;
+import javafx.beans.InvalidationListener;
 
-public  class Special implements Habilidad {
+public  class Special extends Habilidad {
     private String Nombre;
     private String Descripcion;
 
@@ -17,10 +20,13 @@ public  class Special implements Habilidad {
     }
     @Override
     public void ejecutar(Pokemon usuario) {
-        this.efecto(usuario);
+        this.efecto(usuario, CoinFlip.Flip());
     }
 
     @Override
-    public void efecto(Pokemon usuario) {
+    public void efecto(Pokemon usuario, Boolean b) {
+
     }
+
+
 }

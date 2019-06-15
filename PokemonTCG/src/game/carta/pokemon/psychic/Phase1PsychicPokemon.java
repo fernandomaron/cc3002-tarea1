@@ -9,19 +9,10 @@ import game.visitor.Visitor;
 import java.util.ArrayList;
 
 public class Phase1PsychicPokemon extends PokemonPsiquico implements Phase1 {
-    private int PreEvID;
 
     public Phase1PsychicPokemon(int hp, int id, ArrayList<Energia> energias, ArrayList<Habilidad> habilidades, int preid){
         super(hp,id,energias,habilidades);
-        PreEvID =preid;
-    }
-
-    @Override
-    public void evolve2P1(Pokemon obj) {
-        setEnergias(obj.getEnergias());
-        obj.setEnergias(new ArrayList<>());
-        getTrainer().Evolve(this);
-    }
+        this.setPreEvID(preid);    }
 
     @Override
     public void accept(Visitor visitor){
@@ -29,7 +20,5 @@ public class Phase1PsychicPokemon extends PokemonPsiquico implements Phase1 {
     }
 
     @Override
-    public int getPreEvID(){
-        return PreEvID;
-    }
+    public boolean isPhase1(){return true;}
 }

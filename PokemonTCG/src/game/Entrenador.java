@@ -8,12 +8,12 @@ import game.carta.pokemon.Basic;
 import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.PokemonNull;
 import game.habilidad.Habilidad;
+import game.visitor.Visitor;
 
 
 import java.util.ArrayList;
 
 public class Entrenador {
-    private Controller Controller = new Controller();
     private Pokemon Active;
     private ArrayList<Pokemon> Bench;
     private ArrayList<Carta> Hand=new ArrayList<>();
@@ -25,28 +25,22 @@ public class Entrenador {
     private int UsedCard= -1;
 
     public Entrenador(){
-        this(new PokemonNull(), new ArrayList<>(), new ArrayList<>());
+        this(new ArrayList<>());
     }
-    public Entrenador(Pokemon activo,ArrayList<Pokemon> banca,ArrayList<Carta> deck){
-        Active =activo;
-        Bench =banca;
+    public Entrenador(ArrayList<Carta> deck){
         Deck =deck;
     }
 
     public ArrayList<Habilidad> habilidadesPokemon(){
         return Active.getHabilidades();
     }
-    public void usarHabilidad(int index, Pokemon objetivo){
-        Active.usar(Active.getHabilidades().get(index), objetivo);
+    public void usarHabilidad(int index){
+        Active.usar(Active.getHabilidades().get(index), Objetivo);
     }
-    public void jugarCarta(int index) {
+    public void jugarCarta(int index, Visitor visitor) {
         UsedCard=index;
         Hand.get(index).setTrainer(this);
-        Hand.get(index).accept(this.getControl().getVisitor());
-    }
-
-    private Controller getControl() {
-        return this.Controller;
+        Hand.get(index).accept(visitor);
     }
 
     public void setActive(Pokemon pokemon){
@@ -86,22 +80,15 @@ public class Entrenador {
     }
     public void setObjetivo(Pokemon p){
         this.Objetivo=p;
-        ArrayList<Pokemon> possible=new ArrayList<>();
-        possible.addAll(Bench);
+        ArrayList<Pokemon> possible = new ArrayList<>(Bench);
         possible.add(0,Active);
-        int index=possible.indexOf(p);
-        objID=index;
+        objID= possible.indexOf(p);
 
     }
     public Pokemon getObjetivo(){return this.Objetivo;}
 
-
-    public void setController(Controller controller) {
-        this.Controller=controller;
-    }
-
-    public void useStadium(){
-        this.Controller.stadiumEffect(this);
+    public void useStadium(Controller controller){
+        controller.stadiumEffect();
     }
     public void drawCards(int n){
         for(int i=0;i<n;i++){
@@ -131,9 +118,6 @@ public class Entrenador {
         Prize.remove(index);
     }
 
-    public Controller getController() {
-        return Controller;
-    }
     public int getUsedCard(){
         return UsedCard;
     }
@@ -150,5 +134,13 @@ public class Entrenador {
             Discard.add(0,Bench.get(objID-1));
             Bench.set(objID - 1, pokemon);
         }
+    }
+
+    public void setDeck(ArrayList<Carta> deck){
+        Deck=deck;
+    }
+
+    public void setPrize(ArrayList<Carta> prize){
+        Prize=prize;
     }
 }

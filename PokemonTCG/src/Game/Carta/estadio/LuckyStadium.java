@@ -8,11 +8,10 @@ public class LuckyStadium extends Estadio {
     }
 
     @Override
-    public void efecto(Entrenador entrenador) {
+    public void efecto(Entrenador entrenador, Boolean b) {
         double r = Math.random();
-        if (r>0.5){
+        if (b){
             entrenador.drawCards(1);
         }
-        entrenador.getController().setUsedStadium(true);
     }
 }

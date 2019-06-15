@@ -8,7 +8,7 @@ public class Heal extends Special{
     }
 
     @Override
-    public void efecto(Pokemon usuario) {
+    public void efecto(Pokemon usuario,Boolean b) {
         usuario.getObjetivo().setDMGCounter(usuario.getObjetivo().getDMGCounter()-10);
     }
 }
