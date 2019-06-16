@@ -1,12 +1,9 @@
 package game.habilidad.Ataques;
 
 import game.CoinFlip;
-import game.Entrenador;
 import game.carta.energia.Energia;
 import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
-import game.habilidad.OHabilidad;
-import javafx.beans.InvalidationListener;
 
 import java.util.ArrayList;
 

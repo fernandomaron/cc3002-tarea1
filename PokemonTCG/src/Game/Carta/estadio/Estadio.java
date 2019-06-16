@@ -1,9 +1,8 @@
 package game.carta.estadio;
 
-import game.carta.ACarta;
 import game.Entrenador;
 import game.carta.CartaEntrenador;
-import game.visitor.Visitor;
+import game.visitor.VisitorCard;
 
 public class Estadio extends CartaEntrenador {
 
@@ -17,7 +16,7 @@ public class Estadio extends CartaEntrenador {
     }
 
     @Override
-    public void accept(Visitor visitor) {
+    public void accept(VisitorCard visitor) {
         visitor.visitStadium(this);
     }
 

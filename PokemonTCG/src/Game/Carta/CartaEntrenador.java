@@ -1,7 +1,5 @@
 package game.carta;
 
-import game.visitor.Visitor;
-
 public abstract class CartaEntrenador extends ACarta{
     private String Name;
     private String Description;

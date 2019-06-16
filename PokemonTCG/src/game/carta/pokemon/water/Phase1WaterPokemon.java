@@ -1,11 +1,9 @@
 package game.carta.pokemon.water;
 
-import game.Entrenador;
 import game.carta.energia.Energia;
 import game.carta.pokemon.Phase1;
-import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
-import game.visitor.Visitor;
+import game.visitor.VisitorCard;
 
 import java.util.ArrayList;
 
@@ -16,7 +14,7 @@ public class Phase1WaterPokemon extends PokemonAgua implements Phase1 {
         this.setPreEvID(preid);    }
 
     @Override
-    public void accept(Visitor visitor){
+    public void accept(VisitorCard visitor){
         visitor.visitP1Pokemon(this);
     }
 

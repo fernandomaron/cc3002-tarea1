@@ -4,7 +4,6 @@ import game.*;
 import game.carta.ACarta;
 import game.carta.energia.Energia;
 import game.habilidad.Habilidad;
-import game.visitor.Visitor;
 
 import java.util.ArrayList;
 
@@ -15,8 +14,8 @@ import java.util.ArrayList;
 public abstract class AbstractPokemon extends ACarta implements Pokemon{
     private int HP;
     private int ID;
-    private ArrayList<Energia> Energias;
-    private ArrayList<Habilidad> Habilidades;
+    private ArrayList<Energia> Energias= new ArrayList<>();
+    private ArrayList<Habilidad> Habilidades=new ArrayList<>();
     private Entrenador Trainer = super.getTrainer();
     private Pokemon objetivo=null;
     private int DMGCounter;

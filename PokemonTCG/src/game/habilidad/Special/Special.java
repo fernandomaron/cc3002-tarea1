@@ -3,8 +3,6 @@ package game.habilidad.Special;
 import game.CoinFlip;
 import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
-import game.habilidad.OHabilidad;
-import javafx.beans.InvalidationListener;
 
 public  class Special extends Habilidad {
     private String Nombre;

@@ -4,7 +4,7 @@ import game.carta.energia.Energia;
 import game.carta.pokemon.Phase2;
 import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
-import game.visitor.Visitor;
+import game.visitor.VisitorCard;
 
 import java.util.ArrayList;
 
@@ -23,7 +23,7 @@ public class Phase2WaterPokemon extends PokemonAgua implements Phase2 {
     }
 
     @Override
-    public void accept(Visitor visitor){
+    public void accept(VisitorCard visitor){
         visitor.visitP2Pokemon(this);
     }
 

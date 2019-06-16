@@ -1,7 +1,7 @@
 package game.carta.objeto;
 
 import game.carta.CartaEntrenador;
-import game.visitor.Visitor;
+import game.visitor.VisitorCard;
 
 public abstract class Objeto extends CartaEntrenador {
 
@@ -10,7 +10,7 @@ public abstract class Objeto extends CartaEntrenador {
     }
 
     @Override
-    public void accept(Visitor visitor) {
+    public void accept(VisitorCard visitor) {
         visitor.visitObject(this);
     }
 

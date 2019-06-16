@@ -4,18 +4,17 @@ package game;
  * @author Fernando Maron
  */
 import game.carta.Carta;
-import game.carta.pokemon.Basic;
 import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.PokemonNull;
 import game.habilidad.Habilidad;
-import game.visitor.Visitor;
+import game.visitor.VisitorCard;
 
 
 import java.util.ArrayList;
 
 public class Entrenador {
-    private Pokemon Active;
-    private ArrayList<Pokemon> Bench;
+    private Pokemon Active=new PokemonNull();
+    private ArrayList<Pokemon> Bench=new ArrayList<>();
     private ArrayList<Carta> Hand=new ArrayList<>();
     private ArrayList<Carta> Deck;
     private Pokemon Objetivo;
@@ -37,7 +36,7 @@ public class Entrenador {
     public void usarHabilidad(int index){
         Active.usar(Active.getHabilidades().get(index), Objetivo);
     }
-    public void jugarCarta(int index, Visitor visitor) {
+    public void jugarCarta(int index, VisitorCard visitor) {
         UsedCard=index;
         Hand.get(index).setTrainer(this);
         Hand.get(index).accept(visitor);
@@ -87,9 +86,6 @@ public class Entrenador {
     }
     public Pokemon getObjetivo(){return this.Objetivo;}
 
-    public void useStadium(Controller controller){
-        controller.stadiumEffect();
-    }
     public void drawCards(int n){
         for(int i=0;i<n;i++){
             addToMano(Deck.get(0));
@@ -97,8 +93,11 @@ public class Entrenador {
         }
     }
 
-    public void addPrize(Carta carta){
-        Prize.add(carta);
+    public void drawPrize(){
+        for(int i=0; i<6; i++){
+            Prize.add(Deck.get(0));
+            Deck.remove(0);
+        }
     }
 
     public ArrayList<Carta> getDeck(){
@@ -113,7 +112,7 @@ public class Entrenador {
         return Prize;
     }
 
-    public void drawPrize(int index){
+    public void winPrize(int index){
         Hand.add(Prize.get(index));
         Prize.remove(index);
     }
@@ -134,13 +133,11 @@ public class Entrenador {
             Discard.add(0,Bench.get(objID-1));
             Bench.set(objID - 1, pokemon);
         }
+        Objetivo=pokemon;
     }
 
     public void setDeck(ArrayList<Carta> deck){
         Deck=deck;
     }
 
-    public void setPrize(ArrayList<Carta> prize){
-        Prize=prize;
-    }
 }

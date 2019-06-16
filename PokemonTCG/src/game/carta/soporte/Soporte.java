@@ -1,7 +1,7 @@
 package game.carta.soporte;
 
 import game.carta.CartaEntrenador;
-import game.visitor.Visitor;
+import game.visitor.VisitorCard;
 
 public class Soporte extends CartaEntrenador {
 
@@ -9,7 +9,7 @@ public class Soporte extends CartaEntrenador {
         super(name, desc);
     }
     @Override
-    public void accept(Visitor visitor) {
+    public void accept(VisitorCard visitor) {
         visitor.visitSupport(this);
     }
 

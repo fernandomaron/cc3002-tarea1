@@ -11,33 +11,36 @@ import game.carta.soporte.Soporte;
 import game.Entrenador;
 import game.habilidad.Habilidad;
 
-public class VisitCard implements Visitor{
+public class VisitCard implements VisitorCard {
     private Controller Control;
 
     public VisitCard(){
     }
 
-    public void DiscardCard(Entrenador trainer){
+    public  void removeCard(Entrenador trainer){
+        trainer.getHand().remove(trainer.getUsedCard());
+    }
+    public void discardCard(Entrenador trainer){
         trainer.getDiscard().add(0,trainer.getHand().get(trainer.getUsedCard()));
         trainer.getHand().remove(trainer.getUsedCard());
     }
     @Override
     public void visitObject(Objeto obj) {
         obj.effect();
-        DiscardCard(obj.getTrainer());
+        discardCard(obj.getTrainer());
     }
 
     @Override
     public void visitStadium(Estadio s) {
         this.Control.setCurrentStadium(s);
-        DiscardCard(s.getTrainer());
+        discardCard(s.getTrainer());
     }
 
     @Override
     public void visitEnergy(Energia e) {
         if(!Control.getUsedEnergy()) {
             e.getTrainer().getObjetivo().agregarEnergia(e);
-            DiscardCard(e.getTrainer());
+            removeCard(e.getTrainer());
             Control.setUsedEnergy(true);
         }
     }
@@ -46,17 +49,17 @@ public class VisitCard implements Visitor{
     public void visitPokemon(Basic p) {
         if(p.getTrainer().getActive().isNull() && p.getTrainer().getBench().isEmpty()){
             p.getTrainer().setActive(p);
-            DiscardCard(p.getTrainer());
+            removeCard(p.getTrainer());
         }
         else if(p.getTrainer().getActive().isNull() && !p.getTrainer().getBench().isEmpty()){
             p.getTrainer().setActive(p.getTrainer().getBench().get(0));
             p.getTrainer().getBench().remove(0);
             p.getTrainer().getBench().add(p);
-            DiscardCard(p.getTrainer());
+            removeCard(p.getTrainer());
         }
         else if (p.getTrainer().getBench().size()<5){
             p.getTrainer().getBench().add(p);
-            DiscardCard(p.getTrainer());
+            removeCard(p.getTrainer());
         }
         else {
             System.out.println("No se puede jugar este pokemon");
@@ -69,7 +72,7 @@ public class VisitCard implements Visitor{
     @Override
     public void visitSupport(Soporte s) {
         s.effect();
-        DiscardCard(s.getTrainer());
+        discardCard(s.getTrainer());
     }
 
     @Override
@@ -81,7 +84,7 @@ public class VisitCard implements Visitor{
     public void visitP1Pokemon(Phase1 phase1) {
         if(Control.canEvolvePhase1(phase1.getPreEvID())){
             phase1.evolve(phase1.getTrainer().getObjetivo());
-            DiscardCard(phase1.getTrainer());
+            removeCard(phase1.getTrainer());
         }
     }
 
@@ -89,7 +92,7 @@ public class VisitCard implements Visitor{
     public void visitP2Pokemon(Phase2 phase2) {
         if(Control.canEvolvePhase2(phase2.getPreEvID())){
             phase2.evolve(phase2.getTrainer().getObjetivo());
-            DiscardCard(phase2.getTrainer());
+            removeCard(phase2.getTrainer());
         }
     }
 
