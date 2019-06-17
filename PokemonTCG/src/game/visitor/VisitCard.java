@@ -113,8 +113,11 @@ public class VisitCard implements VisitorCard {
      */
     @Override
     public void visitSupport(Soporte s) {
-        s.effect();
-        discardCard(s.getTrainer());
+        if(!Control.getUsedSupport()) {
+            s.effect();
+            discardCard(s.getTrainer());
+            Control.setUsedSupport(true);
+        }
     }
 
     /**

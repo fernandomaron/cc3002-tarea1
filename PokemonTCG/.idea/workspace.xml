@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="Testing Controller">
+    <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="Done testing #Tarea2">
+      <change afterPath="$PROJECT_DIR$/src/Game/Carta/estadio/NullStadium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/energia/Energia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/energia/Energia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Carta/estadio/Estadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/estadio/Estadio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/electric/BasicElectricPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/electric/BasicElectricPokemon.java" afterDir="false" />
@@ -31,13 +33,15 @@
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/Phase2WaterPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/Phase2WaterPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/PokemonAgua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/PokemonAgua.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/soporte/Soporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/soporte/Soporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entrenador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/Ataque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/Ataque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/ElectricShock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/ElectricShock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/Special.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Habilidad/Special/Special.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/visitor/VisitAbility.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/visitor/VisitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/visitor/VisitCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testing/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/visitor/VisitorAbility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/visitor/VisitorCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/visitor/VisitorCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Controller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,9 +88,9 @@
     <session id="-295417471">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="2" />
@@ -97,105 +101,71 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="163" />
-          <entry key="java" value="26542" />
-          <entry key="txt" value="455" />
+          <entry key="java" value="26689" />
+          <entry key="txt" value="476" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26542" />
-          <entry key="PLAIN_TEXT" value="618" />
+          <entry key="JAVA" value="26689" />
+          <entry key="PLAIN_TEXT" value="639" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Ataques" value="1" />
           <entry key="JAVA/" value="1" />
           <entry key="JAVA/Game" value="1" />
+          <entry key="JAVA/game" value="1" />
           <entry key="JavaScript-modules-diagram/C:/Users/Fernando/Desktop/Metodología/2019_1/Tareas/cc3002-tarea1-2019-01/PokemonTCG/src/Game" value="1" />
+          <entry key="JavaScript-modules-diagram/C:/Users/Fernando/Desktop/Metodología/2019_1/Tareas/cc3002-tarea1-2019-01/PokemonTCG/src/game" value="1" />
+          <entry key="Special" value="1" />
+          <entry key="carta" value="1" />
           <entry key="class" value="4" />
+          <entry key="electric" value="1" />
+          <entry key="energia" value="1" />
+          <entry key="estadio" value="1" />
+          <entry key="fighting" value="1" />
+          <entry key="fire" value="1" />
+          <entry key="grass" value="1" />
+          <entry key="habilidad" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="495" />
+          <entry key="java" value="499" />
+          <entry key="objeto" value="1" />
+          <entry key="pokemon" value="1" />
+          <entry key="psychic" value="1" />
+          <entry key="soporte" value="1" />
           <entry key="uml" value="2" />
+          <entry key="visitor" value="1" />
+          <entry key="water" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="495" />
-          <entry key="UML" value="5" />
+          <entry key="JAVA" value="499" />
+          <entry key="UML" value="23" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3173">
-              <caret line="282" column="5" lean-forward="true" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
+            <state relative-caret-position="353">
+              <caret line="234" column="63" selection-start-line="234" selection-start-column="63" selection-end-line="234" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#2229#2230#0" expanded="true" />
-                <element signature="e#2280#2281#0" expanded="true" />
-                <element signature="e#2445#2446#0" expanded="true" />
-                <element signature="e#2478#2479#0" expanded="true" />
-                <element signature="e#2730#2731#0" expanded="true" />
-                <element signature="e#2759#2760#0" expanded="true" />
-                <element signature="e#5002#5003#0" expanded="true" />
-                <element signature="e#5045#5046#0" expanded="true" />
-                <element signature="e#5239#5240#0" expanded="true" />
-                <element signature="e#5283#5284#0" expanded="true" />
-                <element signature="e#5498#5499#0" expanded="true" />
-                <element signature="e#5564#5565#0" expanded="true" />
-                <element signature="e#5769#5770#0" expanded="true" />
-                <element signature="e#5820#5821#0" expanded="true" />
-                <element signature="e#6528#6529#0" expanded="true" />
-                <element signature="e#6556#6557#0" expanded="true" />
-                <element signature="e#7565#7566#0" expanded="true" />
-                <element signature="e#7605#7606#0" expanded="true" />
-                <element signature="e#7783#7784#0" expanded="true" />
-                <element signature="e#7820#7821#0" expanded="true" />
-                <element signature="e#7968#7969#0" expanded="true" />
-                <element signature="e#8006#8007#0" expanded="true" />
-                <element signature="e#8128#8129#0" expanded="true" />
-                <element signature="e#8170#8171#0" expanded="true" />
-                <element signature="e#8274#8275#0" expanded="true" />
-                <element signature="e#8308#8309#0" expanded="true" />
-                <element signature="e#8494#8495#0" expanded="true" />
-                <element signature="e#8531#8532#0" expanded="true" />
-                <element signature="e#8674#8675#0" expanded="true" />
-                <element signature="e#8720#8721#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/Carta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -213,93 +183,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/Estadio.java">
+        <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="24" column="31" selection-start-line="24" selection-end-line="25" />
+            <state relative-caret-position="138">
+              <caret line="294" column="20" selection-start-line="294" selection-start-column="20" selection-end-line="294" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8884#8885#0" expanded="true" />
+                <element signature="e#8917#8918#0" expanded="true" />
+                <element signature="e#8961#8962#0" expanded="true" />
+                <element signature="e#8987#8988#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1433">
-              <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
+            <state relative-caret-position="238">
+              <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#3516#3517#0" expanded="true" />
-                <element signature="e#3552#3553#0" expanded="true" />
+                <element signature="e#3614#3615#0" expanded="true" />
+                <element signature="e#3650#3651#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="234" column="63" selection-start-line="234" selection-start-column="63" selection-end-line="234" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1279#1280#0" expanded="true" />
-                <element signature="e#1900#1901#0" expanded="true" />
-                <element signature="e#1931#1932#0" expanded="true" />
-                <element signature="e#2295#2296#0" expanded="true" />
-                <element signature="e#2323#2324#0" expanded="true" />
-                <element signature="e#2498#2499#0" expanded="true" />
-                <element signature="e#2529#2530#0" expanded="true" />
-                <element signature="e#2695#2696#0" expanded="true" />
-                <element signature="e#2722#2723#0" expanded="true" />
-                <element signature="e#2922#2923#0" expanded="true" />
-                <element signature="e#2949#2950#0" expanded="true" />
-                <element signature="e#3185#3186#0" expanded="true" />
-                <element signature="e#3216#3217#0" expanded="true" />
-                <element signature="e#4638#4639#0" expanded="true" />
-                <element signature="e#4665#4666#0" expanded="true" />
-                <element signature="e#4708#4709#0" expanded="true" />
-                <element signature="e#4738#4739#0" expanded="true" />
-                <element signature="e#4779#4780#0" expanded="true" />
-                <element signature="e#4807#4808#0" expanded="true" />
-                <element signature="e#5257#5258#0" expanded="true" />
-                <element signature="e#5288#5289#0" expanded="true" />
-                <element signature="e#6174#6175#0" expanded="true" />
-                <element signature="e#6199#6200#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/CoinFlip.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitorCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -396,9 +304,9 @@
         <option value="$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java" />
         <option value="$PROJECT_DIR$/src/game/Entrenador.java" />
         <option value="$PROJECT_DIR$/src/game/visitor/VisitorCard.java" />
-        <option value="$PROJECT_DIR$/src/game/visitor/VisitCard.java" />
-        <option value="$PROJECT_DIR$/src/game/Controller.java" />
         <option value="$PROJECT_DIR$/src/testing/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/game/Controller.java" />
+        <option value="$PROJECT_DIR$/src/game/visitor/VisitCard.java" />
       </list>
     </option>
   </component>
@@ -440,7 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -472,15 +379,7 @@
               <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="habilidad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="habilidad" type="462c0819:PsiDirectoryNode" />
-              <item name="Ataques" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
@@ -492,6 +391,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -500,12 +400,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560733240135" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560734139793" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -663,7 +563,8 @@
       <workItem from="1560568639169" duration="3587000" />
       <workItem from="1560612327298" duration="9580000" />
       <workItem from="1560628202478" duration="2985000" />
-      <workItem from="1560636852243" duration="22319000" />
+      <workItem from="1560636852243" duration="23489000" />
+      <workItem from="1560736142859" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="Test de ataques entre pokemones por tipo">
       <created>1556419327360</created>
@@ -749,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560652286423</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Done testing #Tarea2">
+      <created>1560733619323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560733619323</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -785,7 +693,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141916000" />
+    <option name="totallyTimeSpent" value="143710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -796,15 +704,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2885906" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29261744" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.4986577" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49798658" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5013423" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50201344" side_tool="true" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4986577" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -842,147 +750,10 @@
     <MESSAGE value="Pokemon phases evolutions" />
     <MESSAGE value="starting testing" />
     <MESSAGE value="Testing Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Controller" />
+    <MESSAGE value="Done testing #Tarea2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done testing #Tarea2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/ChaosGym.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/OHabilidad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/PokemonNull.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fire/PokemonFuego.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/fighting/PokemonLucha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
-          <folding>
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/psychic/PokemonPsiquico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="63" column="74" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Special/Special.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#540#541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Special/Heal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/PokemonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/HabilidadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="20" selection-start-line="42" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/EstadioTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/objeto/Potion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/LuckyStadium.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/CartaEntrenador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1015,9 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,9 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,11 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,9 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,11 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,26 +852,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitorAbility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitAbility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitorAbility.java" />
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitAbility.java" />
     <entry file="file://$PROJECT_DIR$/src/game/habilidad/Habilidad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1162,11 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="e#3026#3027#0" expanded="true" />
-            <element signature="e#5472#5473#0" expanded="true" />
-            <element signature="e#5525#5526#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,44 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="234" column="63" selection-start-line="234" selection-start-column="63" selection-end-line="234" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1900#1901#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#2295#2296#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-            <element signature="e#2498#2499#0" expanded="true" />
-            <element signature="e#2529#2530#0" expanded="true" />
-            <element signature="e#2695#2696#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2949#2950#0" expanded="true" />
-            <element signature="e#3185#3186#0" expanded="true" />
-            <element signature="e#3216#3217#0" expanded="true" />
-            <element signature="e#4638#4639#0" expanded="true" />
-            <element signature="e#4665#4666#0" expanded="true" />
-            <element signature="e#4708#4709#0" expanded="true" />
-            <element signature="e#4738#4739#0" expanded="true" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4807#4808#0" expanded="true" />
-            <element signature="e#5257#5258#0" expanded="true" />
-            <element signature="e#5288#5289#0" expanded="true" />
-            <element signature="e#6174#6175#0" expanded="true" />
-            <element signature="e#6199#6200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/CoinFlip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1257,16 +948,832 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Fernando/Desktop/Metodología/2019_1/Tareas/cc3002-tarea1-2019-01/PokemonTCG/src/game">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/game</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="530.0" y="211.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game</OriginalElement>
+          <nodes>
+            <node x="0.0" y="222.0">game.CoinFlip</node>
+            <node x="150.0" y="148.0">game.Controller</node>
+            <node x="156.0" y="74.0">game.Entrenador</node>
+            <node x="0.0" y="148.0">game.carta</node>
+            <node x="0.0" y="74.0">game.visitor</node>
+            <node x="0.0" y="0.0">game.habilidad</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-159.0" y="155.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta</OriginalElement>
+          <nodes>
+            <node x="274.0" y="237.0">game.carta.estadio</node>
+            <node x="312.75" y="158.0">game.carta.pokemon</node>
+            <node x="280.0" y="79.0">game.carta.energia</node>
+            <node x="140.0" y="237.0">game.carta.objeto</node>
+            <node x="0.0" y="237.0">game.carta.soporte</node>
+            <node x="301.5" y="0.0">game.carta.Carta</node>
+            <node x="176.0" y="79.0">game.carta.ACarta</node>
+            <node x="130.0" y="158.0">game.carta.CartaEntrenador</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.CartaEntrenador" target="game.carta.ACarta">
+              <point x="0.0" y="-14.5" />
+              <point x="-21.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.energia" target="game.carta.Carta">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.ACarta" target="game.carta.Carta">
+              <point x="0.0" y="-14.5" />
+              <point x="218.0" y="54.0" />
+              <point x="314.1666666666667" y="54.0" />
+              <point x="-25.333333333333314" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon" target="game.carta.Carta">
+              <point x="32.25" y="-14.5" />
+              <point x="409.5" y="54.0" />
+              <point x="364.8333333333333" y="54.0" />
+              <point x="25.333333333333314" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon" target="game.carta.ACarta">
+              <point x="-32.25" y="-14.5" />
+              <point x="345.0" y="133.0" />
+              <point x="239.0" y="133.0" />
+              <point x="21.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.objeto" target="game.carta.CartaEntrenador">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.soporte" target="game.carta.CartaEntrenador">
+              <point x="0.0" y="-14.5" />
+              <point x="60.0" y="212.0" />
+              <point x="152.33333333333334" y="212.0" />
+              <point x="-44.66666666666666" y="14.5" />
+            </edge>
+            <edge source="game.carta.estadio" target="game.carta.CartaEntrenador">
+              <point x="0.0" y="-14.5" />
+              <point x="333.0" y="212.0" />
+              <point x="241.66666666666666" y="212.0" />
+              <point x="44.66666666666666" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-69.0" y="162.0" />
+          <SelectedNodes>
+            <node>game.carta.CartaEntrenador</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.habilidad">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.habilidad</OriginalElement>
+          <nodes>
+            <node x="142.0" y="79.0">game.habilidad.Special</node>
+            <node x="0.0" y="79.0">game.habilidad.Ataques</node>
+            <node x="80.75" y="0.0">game.habilidad.Habilidad</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.habilidad.Special" target="game.habilidad.Habilidad">
+              <point x="0.0" y="-14.5" />
+              <point x="200.5" y="54.0" />
+              <point x="155.75" y="54.0" />
+              <point x="25.0" y="14.5" />
+            </edge>
+            <edge source="game.habilidad.Ataques" target="game.habilidad.Habilidad">
+              <point x="0.0" y="-14.5" />
+              <point x="61.0" y="54.0" />
+              <point x="105.75" y="54.0" />
+              <point x="-25.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-160.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.habilidad.Habilidad</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.energia">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.energia</OriginalElement>
+          <nodes>
+            <node x="292.0" y="89.0">game.carta.energia.EnergiaPlanta</node>
+            <node x="432.0" y="89.0">game.carta.energia.EnergiaLucha</node>
+            <node x="570.0" y="89.0">game.carta.energia.EnergiaElectrico</node>
+            <node x="377.5" y="0.0">game.carta.energia.Energia</node>
+            <node x="140.0" y="89.0">game.carta.energia.EnergiaPsiquico</node>
+            <node x="723.0" y="89.0">game.carta.energia.EnergiaAgua</node>
+            <node x="0.0" y="89.0">game.carta.energia.EnergiaFuego</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.energia.EnergiaElectrico" target="game.carta.energia.Energia">
+              <point x="0.0" y="-14.5" />
+              <point x="636.5" y="59.0" />
+              <point x="443.5" y="59.0" />
+              <point x="22.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.energia.EnergiaLucha" target="game.carta.energia.Energia">
+              <point x="0.0" y="-14.5" />
+              <point x="491.0" y="69.0" />
+              <point x="428.83333333333326" y="69.0" />
+              <point x="7.333333333333314" y="14.5" />
+            </edge>
+            <edge source="game.carta.energia.EnergiaPsiquico" target="game.carta.energia.Energia">
+              <point x="0.0" y="-14.5" />
+              <point x="206.0" y="59.0" />
+              <point x="399.5" y="59.0" />
+              <point x="-22.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.energia.EnergiaAgua" target="game.carta.energia.Energia">
+              <point x="0.0" y="-14.5" />
+              <point x="781.0" y="49.0" />
+              <point x="458.16666666666663" y="49.0" />
+              <point x="36.66666666666663" y="14.5" />
+            </edge>
+            <edge source="game.carta.energia.EnergiaFuego" target="game.carta.energia.Energia">
+              <point x="0.0" y="-14.5" />
+              <point x="60.0" y="49.0" />
+              <point x="384.83333333333326" y="49.0" />
+              <point x="-36.666666666666686" y="14.5" />
+            </edge>
+            <edge source="game.carta.energia.EnergiaPlanta" target="game.carta.energia.Energia">
+              <point x="0.0" y="-14.5" />
+              <point x="352.0" y="69.0" />
+              <point x="414.16666666666663" y="69.0" />
+              <point x="-7.333333333333314" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="130.0" y="88.0" />
+          <SelectedNodes>
+            <node>game.carta.energia.EnergiaFuego</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.estadio">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.estadio</OriginalElement>
+          <nodes>
+            <node x="140.0" y="79.0">game.carta.estadio.NullStadium</node>
+            <node x="0.0" y="79.0">game.carta.estadio.LuckyStadium</node>
+            <node x="84.75" y="0.0">game.carta.estadio.Estadio</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.estadio.NullStadium" target="game.carta.estadio.Estadio">
+              <point x="0.0" y="-14.5" />
+              <point x="196.5" y="54.0" />
+              <point x="150.0" y="54.0" />
+              <point x="21.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.estadio.LuckyStadium" target="game.carta.estadio.Estadio">
+              <point x="0.0" y="-14.5" />
+              <point x="60.0" y="54.0" />
+              <point x="106.5" y="54.0" />
+              <point x="-21.75" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-163.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.estadio.Estadio</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.objeto">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.objeto</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">game.carta.objeto.Objeto</node>
+            <node x="1.0" y="79.0">game.carta.objeto.Potion</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.objeto.Potion" target="game.carta.objeto.Objeto">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-248.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.objeto.Potion</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon</OriginalElement>
+          <nodes>
+            <node x="584.8312500000001" y="358.0">game.carta.pokemon.fire</node>
+            <node x="700.8312500000001" y="358.0">game.carta.pokemon.fighting</node>
+            <node x="459.08125000000007" y="79.0">game.carta.pokemon.Basic</node>
+            <node x="348.58125000000007" y="0.0">game.carta.pokemon.Pokemon</node>
+            <node x="574.8312500000001" y="79.0">game.carta.pokemon.Phase1</node>
+            <node x="353.00000000000006" y="79.0">game.carta.pokemon.Phase2</node>
+            <node x="53.00000000000006" y="79.0">game.carta.pokemon.AbstractPokemon</node>
+            <node x="456.83125000000007" y="358.0">game.carta.pokemon.water</node>
+            <node x="137.0" y="358.0">game.carta.pokemon.electric</node>
+            <node x="214.00000000000006" y="79.0">game.carta.pokemon.PokemonNull</node>
+            <node x="274.00000000000006" y="358.0">game.carta.pokemon.grass</node>
+            <node x="0.0" y="358.0">game.carta.pokemon.psychic</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.fighting" target="game.carta.pokemon.AbstractPokemon">
+              <point x="-45.0" y="-14.5" />
+              <point x="715.8312500000001" y="158.0" />
+              <point x="182.25000000000006" y="158.0" />
+              <point x="58.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fighting" target="game.carta.pokemon.Basic">
+              <point x="15.0" y="-14.5" />
+              <point x="775.8312500000001" y="138.0" />
+              <point x="527.8312500000001" y="138.0" />
+              <point x="31.25" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.grass" target="game.carta.pokemon.AbstractPokemon">
+              <point x="-39.75" y="-14.5" />
+              <point x="287.25000000000006" y="228.0" />
+              <point x="111.75000000000006" y="228.0" />
+              <point x="-11.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.grass" target="game.carta.pokemon.Basic">
+              <point x="13.25" y="-14.5" />
+              <point x="340.25000000000006" y="298.0" />
+              <point x="490.33125000000007" y="298.0" />
+              <point x="-6.25" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.electric" target="game.carta.pokemon.AbstractPokemon">
+              <point x="-43.875" y="-14.5" />
+              <point x="151.625" y="238.0" />
+              <point x="88.25000000000006" y="238.0" />
+              <point x="-35.25" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.electric" target="game.carta.pokemon.Basic">
+              <point x="14.625" y="-14.5" />
+              <point x="210.125" y="288.0" />
+              <point x="477.83125000000007" y="288.0" />
+              <point x="-18.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.Phase1" target="game.carta.pokemon.Pokemon">
+              <point x="0.0" y="-14.5" />
+              <point x="616.8312500000001" y="49.0" />
+              <point x="435.88125000000014" y="49.0" />
+              <point x="38.80000000000001" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fire" target="game.carta.pokemon.Phase1">
+              <point x="36.0" y="-14.5" />
+              <point x="668.8312500000001" y="168.0" />
+              <point x="637.8312500000001" y="168.0" />
+              <point x="21.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.water" target="game.carta.pokemon.Basic">
+              <point x="13.5" y="-14.5" />
+              <point x="524.3312500000001" y="298.0" />
+              <point x="502.83125000000007" y="298.0" />
+              <point x="6.25" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fire" target="game.carta.pokemon.Phase2">
+              <point x="-12.0" y="-14.5" />
+              <point x="620.8312500000001" y="188.0" />
+              <point x="416.00000000000006" y="188.0" />
+              <point x="21.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.psychic" target="game.carta.pokemon.Phase2">
+              <point x="-14.625" y="-14.5" />
+              <point x="43.875" y="248.0" />
+              <point x="360.00000000000006" y="248.0" />
+              <point x="-35.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.psychic" target="game.carta.pokemon.Phase1">
+              <point x="43.875" y="-14.5" />
+              <point x="102.375" y="308.0" />
+              <point x="581.8312500000001" y="308.0" />
+              <point x="-35.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.electric" target="game.carta.pokemon.Phase1">
+              <point x="43.875" y="-14.5" />
+              <point x="239.375" y="318.0" />
+              <point x="595.8312500000001" y="318.0" />
+              <point x="-21.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.electric" target="game.carta.pokemon.Phase2">
+              <point x="-14.625" y="-14.5" />
+              <point x="180.875" y="258.0" />
+              <point x="374.00000000000006" y="258.0" />
+              <point x="-21.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.water" target="game.carta.pokemon.AbstractPokemon">
+              <point x="-40.5" y="-14.5" />
+              <point x="470.33125000000007" y="218.0" />
+              <point x="135.25000000000006" y="218.0" />
+              <point x="11.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fire" target="game.carta.pokemon.AbstractPokemon">
+              <point x="-36.0" y="-14.5" />
+              <point x="596.8312500000001" y="198.0" />
+              <point x="158.75000000000006" y="198.0" />
+              <point x="35.25" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fire" target="game.carta.pokemon.Basic">
+              <point x="12.0" y="-14.5" />
+              <point x="644.8312500000001" y="178.0" />
+              <point x="515.3312500000001" y="178.0" />
+              <point x="18.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.water" target="game.carta.pokemon.Phase1">
+              <point x="40.5" y="-14.5" />
+              <point x="551.3312500000001" y="338.0" />
+              <point x="623.8312500000001" y="338.0" />
+              <point x="7.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.psychic" target="game.carta.pokemon.AbstractPokemon">
+              <point x="-43.875" y="-14.5" />
+              <point x="14.625" y="238.0" />
+              <point x="64.75000000000006" y="238.0" />
+              <point x="-58.75" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.water" target="game.carta.pokemon.Phase2">
+              <point x="-13.5" y="-14.5" />
+              <point x="497.33125000000007" y="208.0" />
+              <point x="402.00000000000006" y="208.0" />
+              <point x="7.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.Basic" target="game.carta.pokemon.Pokemon">
+              <point x="0.0" y="-14.5" />
+              <point x="496.58125000000007" y="59.0" />
+              <point x="416.48125000000005" y="59.0" />
+              <point x="19.399999999999977" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.psychic" target="game.carta.pokemon.Basic">
+              <point x="14.625" y="-14.5" />
+              <point x="73.125" y="278.0" />
+              <point x="465.33125000000007" y="278.0" />
+              <point x="-31.25" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.PokemonNull" target="game.carta.pokemon.Pokemon">
+              <point x="0.0" y="-14.5" />
+              <point x="273.50000000000006" y="59.0" />
+              <point x="377.6812500000001" y="59.0" />
+              <point x="-19.399999999999977" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fighting" target="game.carta.pokemon.Phase2">
+              <point x="-15.0" y="-14.5" />
+              <point x="745.8312500000001" y="148.0" />
+              <point x="430.00000000000006" y="148.0" />
+              <point x="35.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fighting" target="game.carta.pokemon.Phase1">
+              <point x="45.0" y="-14.5" />
+              <point x="805.8312500000001" y="128.0" />
+              <point x="651.8312500000001" y="128.0" />
+              <point x="35.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.Phase2" target="game.carta.pokemon.Pokemon">
+              <point x="0.0" y="-14.5" />
+              <point x="395.00000000000006" y="59.0" />
+              <point x="397.08125000000007" y="59.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.grass" target="game.carta.pokemon.Phase2">
+              <point x="-13.25" y="-14.5" />
+              <point x="313.75000000000006" y="268.0" />
+              <point x="388.00000000000006" y="268.0" />
+              <point x="-7.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.grass" target="game.carta.pokemon.Phase1">
+              <point x="39.75" y="-14.5" />
+              <point x="366.75000000000006" y="328.0" />
+              <point x="609.8312500000001" y="328.0" />
+              <point x="-7.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.AbstractPokemon" target="game.carta.pokemon.Pokemon">
+              <point x="0.0" y="-14.5" />
+              <point x="123.50000000000006" y="49.0" />
+              <point x="358.2812500000001" y="49.0" />
+              <point x="-38.80000000000001" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="121.0" y="223.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.psychic</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon.electric">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon.electric</OriginalElement>
+          <nodes>
+            <node x="183.0" y="79.0">game.carta.pokemon.electric.Phase1ElectricPokemon</node>
+            <node x="375.0" y="79.0">game.carta.pokemon.electric.Phase2ElectricPokemon</node>
+            <node x="0.0" y="79.0">game.carta.pokemon.electric.BasicElectricPokemon</node>
+            <node x="197.5" y="0.0">game.carta.pokemon.electric.PokemonElectrico</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.electric.BasicElectricPokemon" target="game.carta.pokemon.electric.PokemonElectrico">
+              <point x="0.0" y="-14.5" />
+              <point x="81.5" y="54.0" />
+              <point x="221.33333333333334" y="54.0" />
+              <point x="-47.66666666666666" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.electric.Phase2ElectricPokemon" target="game.carta.pokemon.electric.PokemonElectrico">
+              <point x="0.0" y="-14.5" />
+              <point x="461.0" y="54.0" />
+              <point x="316.66666666666663" y="54.0" />
+              <point x="47.66666666666663" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.electric.Phase1ElectricPokemon" target="game.carta.pokemon.electric.PokemonElectrico">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-16.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.electric.PokemonElectrico</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon.fighting">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon.fighting</OriginalElement>
+          <nodes>
+            <node x="197.0" y="79.0">game.carta.pokemon.fighting.BasicFightingPokemon</node>
+            <node x="385.0" y="79.0">game.carta.pokemon.fighting.Phase2FightingPokemon</node>
+            <node x="0.0" y="79.0">game.carta.pokemon.fighting.Phase1FightingPokemon</node>
+            <node x="217.0" y="0.0">game.carta.pokemon.fighting.PokemonLucha</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.fighting.BasicFightingPokemon" target="game.carta.pokemon.fighting.PokemonLucha">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fighting.Phase1FightingPokemon" target="game.carta.pokemon.fighting.PokemonLucha">
+              <point x="0.0" y="-14.5" />
+              <point x="88.5" y="54.0" />
+              <point x="238.33333333333334" y="54.0" />
+              <point x="-42.66666666666666" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fighting.Phase2FightingPokemon" target="game.carta.pokemon.fighting.PokemonLucha">
+              <point x="0.0" y="-14.5" />
+              <point x="473.5" y="54.0" />
+              <point x="323.66666666666663" y="54.0" />
+              <point x="42.66666666666663" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-9.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.fighting.PokemonLucha</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon.fire">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon.fire</OriginalElement>
+          <nodes>
+            <node x="346.0" y="79.0">game.carta.pokemon.fire.BasicFirePokemon</node>
+            <node x="184.5" y="0.0">game.carta.pokemon.fire.PokemonFuego</node>
+            <node x="173.0" y="79.0">game.carta.pokemon.fire.Phase2FirePokemon</node>
+            <node x="0.0" y="79.0">game.carta.pokemon.fire.Phase1FirePokemon</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.fire.BasicFirePokemon" target="game.carta.pokemon.fire.PokemonFuego">
+              <point x="0.0" y="-14.5" />
+              <point x="418.0" y="54.0" />
+              <point x="292.83333333333337" y="54.0" />
+              <point x="43.33333333333337" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fire.Phase2FirePokemon" target="game.carta.pokemon.fire.PokemonFuego">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.fire.Phase1FirePokemon" target="game.carta.pokemon.fire.PokemonFuego">
+              <point x="0.0" y="-14.5" />
+              <point x="76.5" y="54.0" />
+              <point x="206.16666666666666" y="54.0" />
+              <point x="-43.33333333333334" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-45.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.fire.Phase1FirePokemon</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon.grass">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon.grass</OriginalElement>
+          <nodes>
+            <node x="0.0" y="79.0">game.carta.pokemon.grass.BasicGrassPokemon</node>
+            <node x="172.0" y="79.0">game.carta.pokemon.grass.Phase2GrassPokemon</node>
+            <node x="188.0" y="0.0">game.carta.pokemon.grass.PokemonPlanta</node>
+            <node x="354.0" y="79.0">game.carta.pokemon.grass.Phase1GrassPokemon</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.grass.BasicGrassPokemon" target="game.carta.pokemon.grass.PokemonPlanta">
+              <point x="0.0" y="-14.5" />
+              <point x="76.0" y="54.0" />
+              <point x="209.66666666666666" y="54.0" />
+              <point x="-43.33333333333334" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.grass.Phase1GrassPokemon" target="game.carta.pokemon.grass.PokemonPlanta">
+              <point x="0.0" y="-14.5" />
+              <point x="435.0" y="54.0" />
+              <point x="296.33333333333337" y="54.0" />
+              <point x="43.33333333333337" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.grass.Phase2GrassPokemon" target="game.carta.pokemon.grass.PokemonPlanta">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-32.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.grass.Phase1GrassPokemon</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon.psychic">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon.psychic</OriginalElement>
+          <nodes>
+            <node x="182.0" y="79.0">game.carta.pokemon.psychic.Phase2PsychicPokemon</node>
+            <node x="197.5" y="0.0">game.carta.pokemon.psychic.PokemonPsiquico</node>
+            <node x="374.0" y="79.0">game.carta.pokemon.psychic.Phase1PsychicPokemon</node>
+            <node x="0.0" y="79.0">game.carta.pokemon.psychic.BasicPsychicPokemon</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.psychic.Phase2PsychicPokemon" target="game.carta.pokemon.psychic.PokemonPsiquico">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.psychic.BasicPsychicPokemon" target="game.carta.pokemon.psychic.PokemonPsiquico">
+              <point x="0.0" y="-14.5" />
+              <point x="81.0" y="54.0" />
+              <point x="221.0" y="54.0" />
+              <point x="-47.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.psychic.Phase1PsychicPokemon" target="game.carta.pokemon.psychic.PokemonPsiquico">
+              <point x="0.0" y="-14.5" />
+              <point x="460.0" y="54.0" />
+              <point x="315.0" y="54.0" />
+              <point x="47.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-17.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.psychic.BasicPsychicPokemon</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.pokemon.water">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.pokemon.water</OriginalElement>
+          <nodes>
+            <node x="186.0" y="79.0">game.carta.pokemon.water.BasicWaterPokemon</node>
+            <node x="362.0" y="79.0">game.carta.pokemon.water.Phase1WaterPokemon</node>
+            <node x="201.5" y="0.0">game.carta.pokemon.water.PokemonAgua</node>
+            <node x="0.0" y="79.0">game.carta.pokemon.water.Phase2WaterPokemon</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.pokemon.water.Phase1WaterPokemon" target="game.carta.pokemon.water.PokemonAgua">
+              <point x="0.0" y="-14.5" />
+              <point x="445.0" y="54.0" />
+              <point x="305.66666666666663" y="54.0" />
+              <point x="41.66666666666663" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.water.BasicWaterPokemon" target="game.carta.pokemon.water.PokemonAgua">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="game.carta.pokemon.water.Phase2WaterPokemon" target="game.carta.pokemon.water.PokemonAgua">
+              <point x="0.0" y="-14.5" />
+              <point x="83.0" y="54.0" />
+              <point x="222.33333333333334" y="54.0" />
+              <point x="-41.66666666666666" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-26.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.pokemon.water.Phase2WaterPokemon</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.carta.soporte">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.carta.soporte</OriginalElement>
+          <nodes>
+            <node x="8.5" y="0.0">game.carta.soporte.Soporte</node>
+            <node x="0.0" y="79.0">game.carta.soporte.ProfJuniper</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.carta.soporte.ProfJuniper" target="game.carta.soporte.Soporte">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-236.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.carta.soporte.ProfJuniper</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.habilidad.Ataques">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.habilidad.Ataques</OriginalElement>
+          <nodes>
+            <node x="15.5" y="0.0">game.habilidad.Ataques.Ataque</node>
+            <node x="0.0" y="79.0">game.habilidad.Ataques.ElectricShock</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.habilidad.Ataques.ElectricShock" target="game.habilidad.Ataques.Ataque">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-231.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.habilidad.Ataques.ElectricShock</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.habilidad.Special">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.habilidad.Special</OriginalElement>
+          <nodes>
+            <node x="7.0" y="79.0">game.habilidad.Special.Heal</node>
+            <node x="0.0" y="0.0">game.habilidad.Special.Special</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.habilidad.Special.Heal" target="game.habilidad.Special.Special">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-247.0" y="83.0" />
+          <SelectedNodes>
+            <node>game.habilidad.Special.Special</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/game.visitor">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>game.visitor</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">game.visitor.VisitorCard</node>
+            <node x="5.5" y="79.0">game.visitor.VisitCard</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="game.visitor.VisitCard" target="game.visitor.VisitorCard">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="54.0" />
+          <SelectedNodes>
+            <node>game.visitor.VisitCard</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1433">
-          <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
+        <state relative-caret-position="353">
+          <caret line="234" column="63" selection-start-line="234" selection-start-column="63" selection-end-line="234" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#3516#3517#0" expanded="true" />
-            <element signature="e#3552#3553#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1283,44 +1790,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3173">
-          <caret line="282" column="5" lean-forward="true" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
+        <state relative-caret-position="138">
+          <caret line="294" column="20" selection-start-line="294" selection-start-column="20" selection-end-line="294" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#2229#2230#0" expanded="true" />
-            <element signature="e#2280#2281#0" expanded="true" />
-            <element signature="e#2445#2446#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2730#2731#0" expanded="true" />
-            <element signature="e#2759#2760#0" expanded="true" />
-            <element signature="e#5002#5003#0" expanded="true" />
-            <element signature="e#5045#5046#0" expanded="true" />
-            <element signature="e#5239#5240#0" expanded="true" />
-            <element signature="e#5283#5284#0" expanded="true" />
-            <element signature="e#5498#5499#0" expanded="true" />
-            <element signature="e#5564#5565#0" expanded="true" />
-            <element signature="e#5769#5770#0" expanded="true" />
-            <element signature="e#5820#5821#0" expanded="true" />
-            <element signature="e#6528#6529#0" expanded="true" />
-            <element signature="e#6556#6557#0" expanded="true" />
-            <element signature="e#7565#7566#0" expanded="true" />
-            <element signature="e#7605#7606#0" expanded="true" />
-            <element signature="e#7783#7784#0" expanded="true" />
-            <element signature="e#7820#7821#0" expanded="true" />
-            <element signature="e#7968#7969#0" expanded="true" />
-            <element signature="e#8006#8007#0" expanded="true" />
-            <element signature="e#8128#8129#0" expanded="true" />
-            <element signature="e#8170#8171#0" expanded="true" />
-            <element signature="e#8274#8275#0" expanded="true" />
-            <element signature="e#8308#8309#0" expanded="true" />
-            <element signature="e#8494#8495#0" expanded="true" />
-            <element signature="e#8531#8532#0" expanded="true" />
-            <element signature="e#8674#8675#0" expanded="true" />
-            <element signature="e#8720#8721#0" expanded="true" />
+            <element signature="e#8884#8885#0" expanded="true" />
+            <element signature="e#8917#8918#0" expanded="true" />
+            <element signature="e#8961#8962#0" expanded="true" />
+            <element signature="e#8987#8988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3614#3615#0" expanded="true" />
+            <element signature="e#3650#3651#0" expanded="true" />
           </folding>
         </state>
       </provider>

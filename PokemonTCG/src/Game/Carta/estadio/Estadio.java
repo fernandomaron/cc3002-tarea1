@@ -21,4 +21,6 @@ public class Estadio extends CartaEntrenador {
     }
 
     public void efecto(Entrenador entrenador, Boolean b){}
+
+    public boolean isNullStadium(){return false;};
 }
