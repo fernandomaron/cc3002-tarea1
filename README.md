@@ -18,7 +18,7 @@ Energía, cartas que le permiten a los pokemones realizar sus habilidades.
 
 Estadio, durante un juego solo puede haber un estadio activo, por lo que el visitor al ver una nueva carta de estadio reemplaza la ya existente. El controlador es capaz de llamar al efecto del estadio sobre el entrenador que esta jugando el turno.
 
-##Patrones utilizados
+## Patrones utilizados
 
 Se utilizó mucho el patrón de template, ya que muchos elementos compartian similitudes. Como lo son por ejemplo los distintos pokemones.
 
