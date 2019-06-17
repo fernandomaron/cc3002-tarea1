@@ -2,6 +2,7 @@ package game;
 
 import game.carta.Carta;
 import game.carta.estadio.Estadio;
+import game.carta.estadio.NullStadium;
 import game.carta.pokemon.Pokemon;
 import game.habilidad.Habilidad;
 import game.visitor.VisitCard;
@@ -19,7 +20,7 @@ public class Controller implements Observer {
     private boolean UsedStadium = false;
     private Entrenador jugador1;
     private Entrenador jugador2;
-    private Estadio currentStadium=new Estadio();
+    private Estadio currentStadium=new NullStadium();
     private Entrenador currentTrainer;
     private Entrenador opponentTrainer;
     private VisitorCard visit=new VisitCard();
@@ -62,6 +63,9 @@ public class Controller implements Observer {
      * @param s the stadium which will take the place of the current stadium
      */
     public void setCurrentStadium(Estadio s) {
+        if(!currentStadium.isNullStadium()){
+            currentStadium.getTrainer().getDiscard().add(currentStadium);
+        }
         this.currentStadium=s;
     }
 
@@ -230,15 +234,51 @@ public class Controller implements Observer {
         return Deck.size() <= 60;
     }
 
+    /**
+     * Method that retrieves the trainer that is currently playing
+     * @return the player the is currently playing
+     */
     public Entrenador getCurrentTrainer(){
         return currentTrainer;
     }
 
+
+    /**
+     * Method that retrieves the opposing player;
+     * @return the opposing trainer
+     */
     public Entrenador getOpponentTrainer(){
         return opponentTrainer;
     }
 
+    /**
+     * Method that sets the prizes from the deck, drawing 6 cards from it.
+     */
     public void drawPrize() {
         currentTrainer.drawPrize();
+    }
+
+    /**
+     * This method allows to get the current state of the usage of the stadium's effect
+     * @return the state of UsedStadium
+     */
+    public boolean getUsedStadium() {
+        return UsedStadium;
+    }
+
+    /**
+     * Allows to get the current stadium in play
+     * @return the current stadium
+     */
+    public Estadio getCurrentStadium() {
+        return currentStadium;
+    }
+
+    /**
+     * Allows to draw a card from the prize array
+     * @param index the index of the card that will be drawn
+     */
+    public void winPrize(int index){
+        currentTrainer.winPrize(index);
     }
 }

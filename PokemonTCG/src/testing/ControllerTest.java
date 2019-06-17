@@ -6,6 +6,7 @@ import game.carta.Carta;
 import game.carta.energia.Energia;
 import game.carta.energia.EnergiaPlanta;
 import game.carta.estadio.Estadio;
+import game.carta.pokemon.Pokemon;
 import game.carta.pokemon.electric.BasicElectricPokemon;
 import game.carta.pokemon.grass.BasicGrassPokemon;
 import game.carta.pokemon.grass.Phase1GrassPokemon;
@@ -14,8 +15,6 @@ import game.carta.pokemon.water.BasicWaterPokemon;
 import game.habilidad.Ataques.Ataque;
 import game.habilidad.Habilidad;
 import game.habilidad.Special.Heal;
-import game.visitor.VisitCard;
-import game.visitor.VisitorCard;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -58,11 +57,14 @@ public class ControllerTest {
         Deck1.add(Squirtle);
         Deck1.add(Ivysaur);
         Deck1.add(Venusaur);
-        Deck1.add(estadio);
-        for(int i=0; i<55; i++){
+        for(int i=0; i<56; i++){
             Deck1.add(new EnergiaPlanta());
         }
-        Deck2=new ArrayList<>(Deck1);
+        Deck2=new ArrayList<>();
+        Deck2.add(estadio);
+        for(int i=0; i<59; i++){
+            Deck2.add(new EnergiaPlanta());
+        }
         p1= new Entrenador(Deck1);
         p2= new Entrenador(Deck2);
         controller=new Controller(p1,p2);
@@ -141,5 +143,41 @@ public class ControllerTest {
         controller.chooseTargetPokemon(Magnemite);
         controller.useAbility(0);//we use Vine Whip against the Magnemite, ending the players turn
         assertEquals(p2,controller.getCurrentTrainer());
+
+        //we are now in p2's turn
+        //playing a stadium card
+        controller.drawMyCards(1);
+        assertFalse(controller.getUsedEnergy());
+        assertFalse(controller.getUsedStadium());
+        assertEquals(estadio, controller.getCurrentTrainer().getHand().get(0));
+        controller.playCard(0); //we play the stadium card
+        assertEquals(estadio,controller.getCurrentStadium());
+        assertEquals(0,controller.getHand().size());
+        controller.stadiumEffect();//we use the effect of the current stadium
+        assertTrue(controller.getUsedStadium());
+        controller.endTurn();//we end the turn
+        assertEquals(p1, controller.getCurrentTrainer());
+    }
+
+    @Test
+    public void validDeck(){
+        Deck1.add(new EnergiaPlanta());
+        assertFalse(controller.checkDeck(Deck1));
+    }
+
+    @Test
+    public void bench(){
+        controller.drawMyCards(2);
+        controller.playCard(0);
+        assertEquals(1,controller.getHand().size());
+        ArrayList<Pokemon> newBench=new ArrayList<>();
+        newBench.add(new BasicElectricPokemon());
+        newBench.add(new BasicElectricPokemon());
+        newBench.add(new BasicElectricPokemon());
+        newBench.add(new BasicElectricPokemon());
+        newBench.add(new BasicElectricPokemon());
+        controller.getCurrentTrainer().setBench(newBench);
+        controller.playCard(0);
+        assertEquals(1,controller.getHand().size());
     }
 }

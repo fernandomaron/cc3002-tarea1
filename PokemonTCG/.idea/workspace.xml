@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="starting testing">
-      <change afterPath="$PROJECT_DIR$/src/Game/visitor/VisitAbility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/visitor/VisitorAbility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testing/ControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testing/ObjetoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testing/SoporteTest.java" afterDir="false" />
+    <list default="true" id="08117682-b673-4f97-8417-54ee7b541fd6" name="Default Changelist" comment="Testing Controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/CartaEntrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/CartaEntrenador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/energia/Energia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/energia/Energia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/estadio/Estadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/estadio/Estadio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Carta/objeto/Objeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/objeto/Objeto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/Phase2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/electric/BasicElectricPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/electric/BasicElectricPokemon.java" afterDir="false" />
@@ -39,21 +31,13 @@
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/Phase2WaterPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/Phase2WaterPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/PokemonAgua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/pokemon/water/PokemonAgua.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Carta/soporte/Soporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Carta/soporte/Soporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/CoinFlip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/CoinFlip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Entrenador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/Ataque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/Ataque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/ElectricShock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Habilidad/Ataques/ElectricShock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/OHabilidad.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Habilidad/Special/Special.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Habilidad/Special/Special.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/visitor/VisitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/visitor/VisitCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/visitor/Visitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/carta/pokemon/PokemonNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/carta/pokemon/PokemonNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/visitor/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/visitor/VisitorCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testing/EntrenadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/EntrenadorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testing/EstadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/EstadioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/ControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,14 +103,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="163" />
-          <entry key="java" value="22102" />
-          <entry key="txt" value="436" />
+          <entry key="java" value="26542" />
+          <entry key="txt" value="455" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22102" />
-          <entry key="PLAIN_TEXT" value="599" />
+          <entry key="JAVA" value="26542" />
+          <entry key="PLAIN_TEXT" value="618" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -136,7 +120,7 @@
           <entry key="JavaScript-modules-diagram/C:/Users/Fernando/Desktop/Metodología/2019_1/Tareas/cc3002-tarea1-2019-01/PokemonTCG/src/Game" value="1" />
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="489" />
+          <entry key="java" value="495" />
           <entry key="uml" value="2" />
         </counts>
       </usages-collector>
@@ -144,7 +128,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="489" />
+          <entry key="JAVA" value="495" />
           <entry key="UML" value="5" />
         </counts>
       </usages-collector>
@@ -152,44 +136,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="131" column="32" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="32" />
+            <state relative-caret-position="3173">
+              <caret line="282" column="5" lean-forward="true" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1024#1025#0" expanded="true" />
                 <element signature="e#1079#1080#0" expanded="true" />
                 <element signature="e#1241#1242#0" expanded="true" />
                 <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1729#1730#0" expanded="true" />
-                <element signature="e#1766#1767#0" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2081#2082#0" expanded="true" />
-                <element signature="e#2116#2117#0" expanded="true" />
-                <element signature="e#2149#2150#0" expanded="true" />
-                <element signature="e#2405#2406#0" expanded="true" />
-                <element signature="e#2434#2435#0" expanded="true" />
-                <element signature="e#4010#4011#0" expanded="true" />
-                <element signature="e#4053#4054#0" expanded="true" />
-                <element signature="e#4096#4097#0" expanded="true" />
-                <element signature="e#4140#4141#0" expanded="true" />
-                <element signature="e#4193#4194#0" expanded="true" />
-                <element signature="e#4259#4260#0" expanded="true" />
-                <element signature="e#4304#4305#0" expanded="true" />
-                <element signature="e#4355#4356#0" expanded="true" />
-                <element signature="e#4252#4253#0" expanded="true" />
-                <element signature="e#4280#4281#0" expanded="true" />
-                <element signature="e#7407#7408#0" expanded="true" />
-                <element signature="e#7447#7448#0" expanded="true" />
-                <element signature="e#7507#7508#0" expanded="true" />
-                <element signature="e#7543#7544#0" expanded="true" />
-                <element signature="e#7585#7586#0" expanded="true" />
-                <element signature="e#7622#7623#0" expanded="true" />
-                <element signature="e#7654#7655#0" expanded="true" />
-                <element signature="e#7683#7684#0" expanded="true" />
+                <element signature="e#2229#2230#0" expanded="true" />
+                <element signature="e#2280#2281#0" expanded="true" />
+                <element signature="e#2445#2446#0" expanded="true" />
+                <element signature="e#2478#2479#0" expanded="true" />
+                <element signature="e#2730#2731#0" expanded="true" />
+                <element signature="e#2759#2760#0" expanded="true" />
+                <element signature="e#5002#5003#0" expanded="true" />
+                <element signature="e#5045#5046#0" expanded="true" />
+                <element signature="e#5239#5240#0" expanded="true" />
+                <element signature="e#5283#5284#0" expanded="true" />
+                <element signature="e#5498#5499#0" expanded="true" />
+                <element signature="e#5564#5565#0" expanded="true" />
+                <element signature="e#5769#5770#0" expanded="true" />
+                <element signature="e#5820#5821#0" expanded="true" />
+                <element signature="e#6528#6529#0" expanded="true" />
+                <element signature="e#6556#6557#0" expanded="true" />
+                <element signature="e#7565#7566#0" expanded="true" />
+                <element signature="e#7605#7606#0" expanded="true" />
+                <element signature="e#7783#7784#0" expanded="true" />
+                <element signature="e#7820#7821#0" expanded="true" />
+                <element signature="e#7968#7969#0" expanded="true" />
+                <element signature="e#8006#8007#0" expanded="true" />
+                <element signature="e#8128#8129#0" expanded="true" />
+                <element signature="e#8170#8171#0" expanded="true" />
+                <element signature="e#8274#8275#0" expanded="true" />
+                <element signature="e#8308#8309#0" expanded="true" />
+                <element signature="e#8494#8495#0" expanded="true" />
+                <element signature="e#8531#8532#0" expanded="true" />
+                <element signature="e#8674#8675#0" expanded="true" />
+                <element signature="e#8720#8721#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/Carta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -197,8 +203,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testing/ControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="222">
+              <caret line="171" column="52" selection-start-line="171" selection-start-column="52" selection-end-line="171" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,65 +213,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/TestCase.class">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/Estadio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="190" selection-start-line="190" selection-end-line="190" />
-              <folding>
-                <element signature="e#5525#5526#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="24" column="31" selection-start-line="24" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/Assert.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="194" selection-start-line="194" selection-end-line="194" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Observable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+            <state relative-caret-position="1433">
+              <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/grass/BasicGrassPokemon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-798">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#3516#3517#0" expanded="true" />
+                <element signature="e#3552#3553#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -274,22 +240,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2247">
-              <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+            <state relative-caret-position="121">
+              <caret line="234" column="63" selection-start-line="234" selection-start-column="63" selection-end-line="234" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#756#757#0" expanded="true" />
                 <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#2518#2519#0" expanded="true" />
-                <element signature="e#2545#2546#0" expanded="true" />
-                <element signature="e#2588#2589#0" expanded="true" />
-                <element signature="e#2618#2619#0" expanded="true" />
-                <element signature="e#2659#2660#0" expanded="true" />
-                <element signature="e#2687#2688#0" expanded="true" />
-                <element signature="e#2828#2829#0" expanded="true" />
-                <element signature="e#2859#2860#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3242#3243#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+                <element signature="e#2295#2296#0" expanded="true" />
+                <element signature="e#2323#2324#0" expanded="true" />
+                <element signature="e#2498#2499#0" expanded="true" />
+                <element signature="e#2529#2530#0" expanded="true" />
+                <element signature="e#2695#2696#0" expanded="true" />
+                <element signature="e#2722#2723#0" expanded="true" />
+                <element signature="e#2922#2923#0" expanded="true" />
+                <element signature="e#2949#2950#0" expanded="true" />
+                <element signature="e#3185#3186#0" expanded="true" />
+                <element signature="e#3216#3217#0" expanded="true" />
+                <element signature="e#4638#4639#0" expanded="true" />
+                <element signature="e#4665#4666#0" expanded="true" />
+                <element signature="e#4708#4709#0" expanded="true" />
+                <element signature="e#4738#4739#0" expanded="true" />
+                <element signature="e#4779#4780#0" expanded="true" />
+                <element signature="e#4807#4808#0" expanded="true" />
+                <element signature="e#5257#5258#0" expanded="true" />
+                <element signature="e#5288#5289#0" expanded="true" />
+                <element signature="e#6174#6175#0" expanded="true" />
+                <element signature="e#6199#6200#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -300,6 +282,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitorCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -329,6 +329,7 @@
       <find>Controller</find>
       <find>Mano</find>
       <find>getH</find>
+      <find>setC</find>
     </findStrings>
     <replaceStrings>
       <replace>Tackle</replace>
@@ -347,8 +348,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/Phase2.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase2WaterPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/Phase1WaterPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/psychic/Phase2PsychicPokemon.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/psychic/Phase1PsychicPokemon.java" />
@@ -369,8 +368,6 @@
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/electric/PokemonElectrico.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java" />
         <option value="$PROJECT_DIR$/src/game/habilidad/Habilidad.java" />
-        <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java" />
-        <option value="$PROJECT_DIR$/src/game/carta/estadio/Estadio.java" />
         <option value="$PROJECT_DIR$/src/game/carta/estadio/LuckyStadium.java" />
         <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/ElectricShock.java" />
         <option value="$PROJECT_DIR$/src/testing/AtaqueTest.java" />
@@ -393,11 +390,15 @@
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/grass/PokemonPlanta.java" />
         <option value="$PROJECT_DIR$/src/game/visitor/VisitorAbility.java" />
         <option value="$PROJECT_DIR$/src/game/visitor/VisitAbility.java" />
-        <option value="$PROJECT_DIR$/src/game/Controller.java" />
         <option value="$PROJECT_DIR$/src/game/carta/pokemon/AbstractPokemon.java" />
+        <option value="$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/estadio/Estadio.java" />
+        <option value="$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java" />
         <option value="$PROJECT_DIR$/src/game/Entrenador.java" />
-        <option value="$PROJECT_DIR$/src/testing/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/game/visitor/VisitorCard.java" />
         <option value="$PROJECT_DIR$/src/game/visitor/VisitCard.java" />
+        <option value="$PROJECT_DIR$/src/game/Controller.java" />
+        <option value="$PROJECT_DIR$/src/testing/ControllerTest.java" />
       </list>
     </option>
   </component>
@@ -471,23 +472,6 @@
               <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="carta" type="462c0819:PsiDirectoryNode" />
-              <item name="pokemon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="carta" type="462c0819:PsiDirectoryNode" />
-              <item name="pokemon" type="462c0819:PsiDirectoryNode" />
-              <item name="grass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="habilidad" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,13 +481,6 @@
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="habilidad" type="462c0819:PsiDirectoryNode" />
               <item name="Ataques" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokemonTCG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PokemonTCG" type="b2602c69:ProjectViewProjectNode" />
@@ -523,7 +500,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560652232439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560733240135" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -544,8 +521,8 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="game.habilidad" />
       <recent name="game.carta.estadio" />
+      <recent name="game.habilidad" />
       <recent name="game.carta.objeto" />
       <recent name="Game.Carta.Soporte" />
     </key>
@@ -562,7 +539,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest.playingCardsEvolvingAndAbilities">
+  <component name="RunManager" selected="JUnit.ControllerTest">
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PokemonTCG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testing" />
+      <option name="MAIN_CLASS_NAME" value="testing.ControllerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ControllerTest.drawingCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PokemonTCG" />
       <extension name="coverage">
@@ -627,36 +618,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntrenadorTest.addToMano" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PokemonTCG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testing" />
-      <option name="MAIN_CLASS_NAME" value="testing.EntrenadorTest" />
-      <option name="METHOD_NAME" value="addToMano" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.EntrenadorTest.addToMano" />
       <item itemvalue="JUnit.ControllerTest.drawingCards" />
       <item itemvalue="JUnit.ControllerTest.playingCards" />
       <item itemvalue="JUnit.ControllerTest.playingCardsAndEvolution" />
       <item itemvalue="JUnit.ControllerTest.playingCardsEvolvingAndAbilities" />
+      <item itemvalue="JUnit.ControllerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerTest" />
         <item itemvalue="JUnit.ControllerTest.playingCardsEvolvingAndAbilities" />
         <item itemvalue="JUnit.ControllerTest.playingCardsAndEvolution" />
         <item itemvalue="JUnit.ControllerTest.playingCards" />
         <item itemvalue="JUnit.ControllerTest.drawingCards" />
-        <item itemvalue="JUnit.EntrenadorTest.addToMano" />
       </list>
     </recent_temporary>
   </component>
@@ -688,7 +663,7 @@
       <workItem from="1560568639169" duration="3587000" />
       <workItem from="1560612327298" duration="9580000" />
       <workItem from="1560628202478" duration="2985000" />
-      <workItem from="1560636852243" duration="13303000" />
+      <workItem from="1560636852243" duration="22319000" />
     </task>
     <task id="LOCAL-00001" summary="Test de ataques entre pokemones por tipo">
       <created>1556419327360</created>
@@ -767,43 +742,50 @@
       <option name="project" value="LOCAL" />
       <updated>1560628041680</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Testing Controller">
+      <created>1560652286423</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560652286423</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllerTest_drawingCards - 2019.06.15 at 21h 23m 13s.xml">
-      <configuration name="ControllerTest.drawingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCards - 2019.06.15 at 21h 27m 36s.xml">
-      <configuration name="ControllerTest.playingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCards - 2019.06.15 at 21h 30m 16s.xml">
-      <configuration name="ControllerTest.playingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCards - 2019.06.15 at 21h 31m 01s.xml">
-      <configuration name="ControllerTest.playingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCards - 2019.06.15 at 21h 32m 13s.xml">
-      <configuration name="ControllerTest.playingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCards - 2019.06.15 at 21h 34m 42s.xml">
-      <configuration name="ControllerTest.playingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCards - 2019.06.15 at 21h 37m 34s.xml">
-      <configuration name="ControllerTest.playingCards" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCardsAndEvolution - 2019.06.15 at 21h 52m 14s.xml">
-      <configuration name="ControllerTest.playingCardsAndEvolution" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.15 at 22h 24m 29s.xml">
+    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.16 at 11h 22m 28s.xml">
       <configuration name="ControllerTest.playingCardsEvolvingAndAbilities" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.15 at 22h 28m 12s.xml">
+    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.16 at 11h 22m 41s.xml">
       <configuration name="ControllerTest.playingCardsEvolvingAndAbilities" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.16 at 18h 53m 33s.xml">
+      <configuration name="ControllerTest.playingCardsEvolvingAndAbilities" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.16 at 18h 53m 58s.xml">
+      <configuration name="ControllerTest.playingCardsEvolvingAndAbilities" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.16 at 18h 55m 11s.xml">
+      <configuration name="ControllerTest.playingCardsEvolvingAndAbilities" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest_playingCardsEvolvingAndAbilities - 2019.06.16 at 18h 55m 47s.xml">
+      <configuration name="ControllerTest.playingCardsEvolvingAndAbilities" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.06.16 at 18h 57m 11s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.06.16 at 19h 09m 07s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.06.16 at 19h 09m 43s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.06.16 at 21h 00m 45s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132900000" />
+    <option name="totallyTimeSpent" value="141916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -859,17 +841,10 @@
     <MESSAGE value="Delete null stadium" />
     <MESSAGE value="Pokemon phases evolutions" />
     <MESSAGE value="starting testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting testing" />
+    <MESSAGE value="Testing Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Controller" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game/carta/energia/Energia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/Meditate.java" />
     <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/ChaosGym.java" />
     <entry file="file://$PROJECT_DIR$/src/game/habilidad/OHabilidad.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -922,13 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="63" column="74" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/Carta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1015,13 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/Estadio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/CartaEntrenador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1074,13 +1035,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1146,13 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitorAbility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1180,53 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/CoinFlip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="131" column="32" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1766#1767#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2081#2082#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2149#2150#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
-            <element signature="e#2434#2435#0" expanded="true" />
-            <element signature="e#4010#4011#0" expanded="true" />
-            <element signature="e#4053#4054#0" expanded="true" />
-            <element signature="e#4096#4097#0" expanded="true" />
-            <element signature="e#4140#4141#0" expanded="true" />
-            <element signature="e#4193#4194#0" expanded="true" />
-            <element signature="e#4259#4260#0" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-            <element signature="e#4355#4356#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#7407#7408#0" expanded="true" />
-            <element signature="e#7447#7448#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7543#7544#0" expanded="true" />
-            <element signature="e#7585#7586#0" expanded="true" />
-            <element signature="e#7622#7623#0" expanded="true" />
-            <element signature="e#7654#7655#0" expanded="true" />
-            <element signature="e#7683#7684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/grass/BasicGrassPokemon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1251,38 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2247">
-          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2545#2546#0" expanded="true" />
-            <element signature="e#2588#2589#0" expanded="true" />
-            <element signature="e#2618#2619#0" expanded="true" />
-            <element signature="e#2659#2660#0" expanded="true" />
-            <element signature="e#2687#2688#0" expanded="true" />
-            <element signature="e#2828#2829#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3242#3243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/TestCase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-          <folding>
-            <element signature="e#5525#5526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1290,24 +1158,169 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#3026#3027#0" expanded="true" />
+            <element signature="e#5472#5473#0" expanded="true" />
+            <element signature="e#5525#5526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/habilidad/Ataques/Ataque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/Carta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/Estadio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="31" selection-start-line="24" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/estadio/NullStadium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Entrenador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="234" column="63" selection-start-line="234" selection-start-column="63" selection-end-line="234" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2323#2324#0" expanded="true" />
+            <element signature="e#2498#2499#0" expanded="true" />
+            <element signature="e#2529#2530#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2722#2723#0" expanded="true" />
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
+            <element signature="e#3185#3186#0" expanded="true" />
+            <element signature="e#3216#3217#0" expanded="true" />
+            <element signature="e#4638#4639#0" expanded="true" />
+            <element signature="e#4665#4666#0" expanded="true" />
+            <element signature="e#4708#4709#0" expanded="true" />
+            <element signature="e#4738#4739#0" expanded="true" />
+            <element signature="e#4779#4780#0" expanded="true" />
+            <element signature="e#4807#4808#0" expanded="true" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5288#5289#0" expanded="true" />
+            <element signature="e#6174#6175#0" expanded="true" />
+            <element signature="e#6199#6200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/CoinFlip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/carta/pokemon/water/PokemonAgua.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitorCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1433">
+          <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#3516#3517#0" expanded="true" />
+            <element signature="e#3552#3553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/testing/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="222">
+          <caret line="171" column="52" selection-start-line="171" selection-start-column="52" selection-end-line="171" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/visitor/VisitCard.java">
+    <entry file="file://$PROJECT_DIR$/src/game/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+        <state relative-caret-position="3173">
+          <caret line="282" column="5" lean-forward="true" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2478#2479#0" expanded="true" />
+            <element signature="e#2730#2731#0" expanded="true" />
+            <element signature="e#2759#2760#0" expanded="true" />
+            <element signature="e#5002#5003#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5283#5284#0" expanded="true" />
+            <element signature="e#5498#5499#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
+            <element signature="e#5769#5770#0" expanded="true" />
+            <element signature="e#5820#5821#0" expanded="true" />
+            <element signature="e#6528#6529#0" expanded="true" />
+            <element signature="e#6556#6557#0" expanded="true" />
+            <element signature="e#7565#7566#0" expanded="true" />
+            <element signature="e#7605#7606#0" expanded="true" />
+            <element signature="e#7783#7784#0" expanded="true" />
+            <element signature="e#7820#7821#0" expanded="true" />
+            <element signature="e#7968#7969#0" expanded="true" />
+            <element signature="e#8006#8007#0" expanded="true" />
+            <element signature="e#8128#8129#0" expanded="true" />
+            <element signature="e#8170#8171#0" expanded="true" />
+            <element signature="e#8274#8275#0" expanded="true" />
+            <element signature="e#8308#8309#0" expanded="true" />
+            <element signature="e#8494#8495#0" expanded="true" />
+            <element signature="e#8531#8532#0" expanded="true" />
+            <element signature="e#8674#8675#0" expanded="true" />
+            <element signature="e#8720#8721#0" expanded="true" />
           </folding>
         </state>
       </provider>

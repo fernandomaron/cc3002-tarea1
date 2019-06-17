@@ -47,6 +47,7 @@ public class Ataque extends Habilidad {
     public void attack(Pokemon usuario) {
         usuario.atacarCon(this);
         this.efecto(usuario, CoinFlip.Flip());
+        setChanged();
         notifyObservers();
 
     }
