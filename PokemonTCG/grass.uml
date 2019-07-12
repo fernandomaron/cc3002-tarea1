@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>game.carta.pokemon.grass</OriginalElement>
+  <nodes>
+    <node x="182.0" y="79.0">game.carta.pokemon.grass.BasicGrassPokemon</node>
+    <node x="354.0" y="79.0">game.carta.pokemon.grass.Phase2GrassPokemon</node>
+    <node x="193.0" y="0.0">game.carta.pokemon.grass.PokemonPlanta</node>
+    <node x="0.0" y="79.0">game.carta.pokemon.grass.Phase1GrassPokemon</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="game.carta.pokemon.grass.BasicGrassPokemon" target="game.carta.pokemon.grass.PokemonPlanta">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="game.carta.pokemon.grass.Phase1GrassPokemon" target="game.carta.pokemon.grass.PokemonPlanta">
+      <point x="0.0" y="-14.5" />
+      <point x="81.0" y="54.0" />
+      <point x="214.66666666666666" y="54.0" />
+      <point x="-43.33333333333334" y="14.5" />
+    </edge>
+    <edge source="game.carta.pokemon.grass.Phase2GrassPokemon" target="game.carta.pokemon.grass.PokemonPlanta">
+      <point x="0.0" y="-14.5" />
+      <point x="435.0" y="54.0" />
+      <point x="301.33333333333337" y="54.0" />
+      <point x="43.33333333333337" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="258.0" y="54.0" />
+  <SelectedNodes>
+    <node>game.carta.pokemon.grass.Phase1GrassPokemon</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
