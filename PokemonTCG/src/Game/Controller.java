@@ -25,6 +25,7 @@ public class Controller implements Observer {
     private Entrenador opponentTrainer;
     private VisitorCard visit=new VisitCard();
     private boolean UsedEnergy=false;
+    private boolean UsedSupport=false;
 
     public Controller(Entrenador j1, Entrenador j2){
         jugador1=j1;
@@ -280,5 +281,21 @@ public class Controller implements Observer {
      */
     public void winPrize(int index){
         currentTrainer.winPrize(index);
+    }
+
+    /**
+     * Allows to get the state of UsedSupport
+     * @return the state of UsedSupport
+     */
+    public boolean getUsedSupport(){
+        return UsedSupport;
+    }
+
+    /**
+     * Allows to set the state of UsedSupport
+     * @param b the state of UsedSupport
+     */
+    public void setUsedSupport(boolean b){
+        UsedSupport=b;
     }
 }
