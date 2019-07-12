@@ -2,16 +2,28 @@
 
 ## Resumen
 
-Se implemento una version base del juego de cartas de pokemon, para esto se debio seguir algunas ideas que cimentaron la construccion del programa. En primera instancia nos definimos cuales serian los elementos que estarian en esta version del programa. Una instancia de Entrenador, el cual debe actuar como un primer escalon para la creacion de una intancia que el jugador controle. Cartas las cuales se dividieron en energias y pokemones.
+Se implemento una version base del juego de cartas de pokemon, para esto se debio seguir algunas ideas que cimentaron la construccion del programa. En primera instancia nos definimos cuales serian los elementos que estarian en esta version del programa. Una instancia de Entrenador, el cual mantiene los datos de un jugador. Cartas las cuales se dividieron en energias, pokemones, objetos, estadio y soporte, las cuales llaman a un visitor para realizar sus distintas funciones. Y un controlador, el cual verifica el funcionamiento del juego, el paso de los turnos, y el elemento con elcual se controla el flujo del juego.
 
-Hablaremos primero de las energias, estas son cartas que se adieren a los pokemones para que estos despues puedan realizar sus acciones. Una energia sirve para indicar el coste de estas habilidades, por lo que si un pokemon no tiene las suficientes energias no podra realizar la accion deseada.
+Hablaremos un poco acerca del controlador primero, este es el elemento que será entregado al usuario, con una instancia de este se puede simular un juego completo con los cambios de turno, algunas de las reglas básicas y manteniendo siempre la información necesaria.
 
-Las cartas de pokemon son las que realizan la mayor cantidad de acciones junto al entrenador, estas deben ser capaces de usar sus habilidades contra alguna otra carta de pokemon, poder tener conocimiento de las energias que poseen, como tambien tener registro de la vida restante que le queda.
+El entrenador es una instancia que permite mantener información acerca de las cartas que tiene un jugador, mano, mazo, pila de descarte, banca, pokemon activo. Toda esta información la mantiene la instancia de entrenador y es capaz de jugar cartas si es que el controlador se lo permite, como también activar una habilidad de su pokemon activo.
 
-El entrenador debe ser capaz de jugar esta distintas cartas al campo de juego y utilizarlas debidamente, es decir, si se ha jugado un pokemon, que este vaya a la banca del entrenador que lo ha jugado. Si juega una carta de energia, que esta se añada a la lista de energias del pokemon activo que se tiene en ese momento. Como tambien poder hacer la llamada a alguna de las habilidades que su pokemon activo posee.
+Pokemon, estos mantiene información acerca de su vida, sus contadores de daño, habilidades que posee y energias a su disposición. Los pokemones son capaces de utilizar sus habilidades en contra de un pokemon objetivo. También dependiendo de si es un pokemon básico, fase 1 o fase 2, son jugados de distinta manera por el visitor. Tanto los fase 1 como los fase 2 mantienen el id del pokemon que es su anteevolución.
 
-## Patrones de diseño
+Objeto, son cartas que llaman al visitor para realizar un efecto sobre el pokemon objetivo del entrenador que la jugó.
 
-Para tener este diseño se utilizo en gran parte homomorfismo, ya que se tenian muchos objetos distintos que debian llamarse por un mismo metodo, es por esto que se crearon las interfaces y clases abstractas necesarias para facilitar esto. Llamando desde los metodos a estas, cuando realmente estamos entrgando alguna de sus subclases. 
+Soporte, al igual que las objeto realizan un efecto sobre el pokemon objetivo del entrenador que la jugó, pero solo puede jugarse una de estas por turno.
 
-Ademas de esto se utilizo double dispatch para el uso de habilidades, o el saber que carta es la que se ha usado por el entrenador. Como tambien en los tipos de ataque a realizar, ataque es una de las sublcases de habilidad. Esto ultimo fue lo mas dificili de pensar, ya que debia saber mucho de quien estaba realizando una accion, quien era afectado, y por que ataque estaba siendo, valga la redundancia, atacado. Perogracias a una buena implementacion de double dispatch, se logro el objetivo.
+Energía, cartas que le permiten a los pokemones realizar sus habilidades.
+
+Estadio, durante un juego solo puede haber un estadio activo, por lo que el visitor al ver una nueva carta de estadio reemplaza la ya existente. El controlador es capaz de llamar al efecto del estadio sobre el entrenador que esta jugando el turno.
+
+## Patrones utilizados
+
+Se utilizó mucho el patrón de template, ya que muchos elementos compartian similitudes. Como lo son por ejemplo los distintos pokemones.
+
+También se utilizó el visitor pattern para realizar el llamado a distintos metodos dependiendo de la carta que el entrenador jugaba.
+
+Se utilizó un observer en el controlador, el cual observa a las habilidades de los pokemons que son jugados. Si un pokemon utiliza un ataque, esto informa al observer para que termine el turno del jugador y pase al siguiente turno.
+
+Por último el controlador se puede ver como un gran adapter que proporciona control sobre el entrenador y sus metodos.
